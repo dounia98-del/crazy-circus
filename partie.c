@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdio.h>
 
-// --- Permutations (Inchangé) ---
+// Permutations
 char*** genererToutesPermutations(char* animaux[], int n, int* nbPermutations) {
     int total = 1; for (int i = 2; i <= n; ++i) total *= i;
     *nbPermutations = total;
@@ -30,7 +30,7 @@ char*** genererToutesPermutations(char* animaux[], int n, int* nbPermutations) {
 }
 void afficherCartes(char*** permutations, int nbPermutations, int n) {}
 
-// --- Création Carte (Inchangé) ---
+// Création Carte 
 Carte creerCarteDepuisPermutation(char** permut, int n, int sep) {
     Carte carte;
     carte.depart.bleu.animaux = (char**)malloc(10 * sizeof(char*));
@@ -73,7 +73,6 @@ void initPartie(Partie* partie, Joueur* joueurs, int nbJoueurs) {
     free(permutations);
 }
 
-// === CORRECTION 1 : AFFICHAGE ALIGNÉ ===
 // On utilise une largeur fixe de 12 caractères pour que tout soit droit.
 void getCarte(const Carte* carte) {
     int hauteur = 3;
@@ -98,27 +97,25 @@ void getCarte(const Carte* carte) {
         printf("\n");
     }
 
-    // Le sol aligné avec les colonnes de 12
+    
     printf("----        ----           ==>  ----        ----\n");
     printf("BLEU        ROUGE               BLEU        ROUGE\n");
 }
 
-// === CORRECTION 2 : PIOCHE UNIQUE ===
-// Cette fonction ne crée plus une carte aléatoire, elle PIOCHE une vraie carte du paquet
-// et réduit le paquet pour ne pas la revoir.
+
+// Cette fonction elle pioche une vraie carte du paquet et réduit le paquet pour ne pas la revoir.
 Carte* tirerCarteAleatoire(Partie* partie) {
     if (partie->nbCartes == 0) return NULL; // Plus de cartes
 
-    // 1. On choisit un index au hasard parmi les cartes RESTANTES
+	// On choisit un index au hasard parmi les cartes qui restent
     int index = rand() % partie->nbCartes;
 
-    // 2. On récupère l'adresse de cette carte
+    // On récupère l'adresse de cette carte
     Carte* carteChoisie = &partie->cartes[index];
 
-    // 3. Pour "supprimer" la carte du paquet sans tout décaler,
-    // on échange la carte choisie avec la DERNIÈRE carte du tableau,
+    // Pour supprimer la carte du paquet sans tout décaler,
+    // on échange la carte choisie avec la derniere carte du tableau,
     // puis on réduit la taille du tableau de 1.
-    // (Astuce classique efficace).
 
     if (index != partie->nbCartes - 1) {
         Carte temp = partie->cartes[index];
@@ -126,9 +123,8 @@ Carte* tirerCarteAleatoire(Partie* partie) {
         partie->cartes[partie->nbCartes - 1] = temp;
     }
 
-    // On retourne la carte qui est maintenant à la fin (et on décrémente le compteur après)
-    // Mais attention : pour la logique du jeu, on renvoie un pointeur vers la zone mémoire valide.
-    // Ici on va juste décrémenter le nombre de cartes et renvoyer celle qu'on a mise à la fin.
+   
+    // on va décrémenter le nombre de cartes et renvoyer celle qu'on a mise à la fin
     partie->nbCartes--;
     return &partie->cartes[partie->nbCartes];
 }

@@ -9,31 +9,28 @@
 #include "partie.h"
 #include "jeu.h"
 
-// Fonction simple pour comparer deux joueurs (utilisée pour le classement final)
-// Elle renvoie :
-// positif si B est plus fort que A
-// négatif si A est plus fort que B
+// Fonction pour comparer deux joueurs 
 int comparerJoueurs(const void* a, const void* b) {
     const Joueur* j1 = (const Joueur*)a;
     const Joueur* j2 = (const Joueur*)b;
 
-    // 1. On regarde d'abord le score (le plus grand d'abord)
+    //On regarde d'abord le score (le plus grand d'abord)
     if (j2->score != j1->score) {
         return j2->score - j1->score;
     }
-    // 2. Si égalité, on trie par ordre alphabétique (strcmp)
+    //Si égalité, on trie par ordre alphabétique
     return strcmp(j1->nom, j2->nom);
 }
 
-// Fonction pour vérifier si un ordre (ex: "KI") existe dans la config
+// Fonction pour vérifier si un ordre existe dans la config
 int estOrdreValide(const char* ordre, const Config* config) {
     for (int i = 0; i < config->nbOrdres; i++) {
         // strcmp renvoie 0 si les chaines sont identiques
         if (strcmp(ordre, config->ordres[i]) == 0) {
-            return 1; // C'est valide
+            return 1;
         }
     }
-    return 0; // Pas trouvé
+    return 0;
 }
 
 // Fonction pour copier les animaux d'une position A vers une position B
@@ -50,7 +47,7 @@ void copierPosition(Position* destination, const Position* source) {
 int main(int argc, const char* argv[]) {
     srand((unsigned int)time(NULL));
 
-    // Vérification : il faut au moins 2 joueurs (donc 3 arguments avec le nom du programme)
+    // Vérif il faut au moins 2 joueurs
     if (argc < 3) {
         printf("Erreur : Il faut au moins 2 joueurs en arguments.\n");
         return 1;
@@ -75,7 +72,6 @@ int main(int argc, const char* argv[]) {
     // 4. Affichage des règles
     printf("KI (B -> R) | LO (B <- R) | SO (B <-> R) | NI (B ^) | MA (R ^)\n\n");
 
-    // --- GESTION DE LA POSITION COURANTE ---
     // On crée une variable pour stocker où sont les animaux en ce moment
     Position posCourante;
     posCourante.bleu.animaux = malloc(10 * sizeof(char*));
@@ -93,16 +89,15 @@ int main(int argc, const char* argv[]) {
     // Variables pour le jeu
     int jeuTermine = 0;
     Carte* carteEnJeu = NULL; // Pointeur vers la carte qu'on essaie de résoudre
-    char nomJoueur[50];       // Pour stocker le nom tapé (ex: "MZ")
-    char sequence[100];       // Pour stocker les ordres tapés (ex: "KIKI")
+    char nomJoueur[50];       // Pour stocker le nom tapé 
+    char sequence[100];       // Pour stocker les ordres tapés 
 
-    // --- BOUCLE PRINCIPALE ---
     while (!jeuTermine) {
 
-        // A. Si on n'a pas de carte active (début de partie ou point gagné)
+        // Si on n'a pas de carte active (début de partie ou point gagné)
         if (carteEnJeu == NULL) {
             if (partie.nbCartes == 0) {
-                // Plus de cartes dans le paquet -> Fin du jeu
+                // Plus de cartes dans le paquet donc fin du jeu
                 jeuTermine = 1;
                 continue;
             }
@@ -125,12 +120,12 @@ int main(int argc, const char* argv[]) {
         // On force l'affichage pour être sûr que tout apparaisse
         fflush(stdout);
 
-        // B. On attend que le joueur tape : NOM SEQUENCE
+		// Tape le nom et la séquence
         if (scanf("%s %s", nomJoueur, sequence) != 2) {
-            break; // Erreur de lecture
+            break; 
         }
 
-        // C. On cherche quel joueur a tapé son nom
+        // On cherche quel joueur a tapé son nom
         int indexJoueur = -1;
         for (int i = 0; i < nbJoueurs; i++) {
             if (strcmp(partie.joueurs[i].nom, nomJoueur) == 0) {
@@ -153,11 +148,11 @@ int main(int argc, const char* argv[]) {
             continue;
         }
 
-        // D. On vérifie si les ordres existent (ex: est-ce que "KI" existe ?)
+        // On vérifie si les ordres existent 
         int syntaxeCorrecte = 1;
         char ordreTemp[3] = { 0 }; // Pour stocker 2 lettres
 
-        // On avance de 2 en 2 dans la chaine (i=0, 2, 4...)
+        // On avance de 2 en 2 dans la chaine 
         for (int i = 0; sequence[i] != '\0'; i += 2) {
             // S'il reste une lettre toute seule à la fin -> Erreur
             if (sequence[i + 1] == '\0') {
@@ -179,13 +174,13 @@ int main(int argc, const char* argv[]) {
         }
 
         if (syntaxeCorrecte == 0) {
-            // Si l'ordre n'existe pas, on redemande (selon l'annexe du sujet)
+            // Si l'ordre n'existe pas, on redemande
             continue;
         }
 
-        // E. On teste si la séquence marche
+        // On teste si la séquence marche
         if (testerCarte(carteEnJeu, sequence)) {
-            // --- VICTOIRE ---
+            // si victoire
             printf("%s gagne un point\n\n", joueurActuel->nom);
             ajouterPoint(joueurActuel);
 
@@ -196,11 +191,11 @@ int main(int argc, const char* argv[]) {
             carteEnJeu = NULL;
         }
         else {
-            // --- ECHEC ---
+            // si perdu
             printf("La sequence ne conduit pas a la situation attendue -- %s ne peut plus jouer durant ce tour\n", joueurActuel->nom);
             joueurActuel->peutjouer = 0; // Le joueur est éliminé
 
-            // F. On regarde s'il reste des survivants
+            // On regarde s'il reste des survivants
             int joueursEnLice = 0;
             int indexSurvivant = -1;
             for (int i = 0; i < nbJoueurs; i++) {
@@ -216,8 +211,7 @@ int main(int argc, const char* argv[]) {
                 printf("%s gagne un point car lui seul peut encore jouer durant ce tour\n\n", survivant->nom);
                 ajouterPoint(survivant);
 
-                // IMPORTANT : Même s'il gagne par forfait, on considère que le tour est passé
-                // Donc les animaux se déplacent vers la cible
+                
                 copierPosition(&posCourante, &carteEnJeu->cible);
 
                 carteEnJeu = NULL; // On passera au tour suivant
@@ -225,8 +219,8 @@ int main(int argc, const char* argv[]) {
         }
     }
 
-    // --- FIN DU JEU : CLASSEMENT ---
-    // qsort est une fonction standard de <stdlib.h> pour trier un tableau
+	// Jeu terminé, on affiche les scores finaux
+    // qsort c une fonction standard de <stdlib.h> pour trier un tableau
     qsort(joueurs, nbJoueurs, sizeof(Joueur), comparerJoueurs);
 
 
@@ -235,6 +229,5 @@ int main(int argc, const char* argv[]) {
     }
 
     libererConfig(&config);
-    // On devrait aussi libérer posCourante ici, mais l'OS le fera à la fin du programme
     return 0;
 }

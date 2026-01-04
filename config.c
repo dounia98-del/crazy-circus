@@ -10,7 +10,6 @@ Config lireConfig(const char* nomFichier) {
 
     if (!fichier) {
         printf("Erreur : impossible d'ouvrir le fichier %s\n", nomFichier);
-        // On met une pause pour voir l'erreur
         getchar();
         exit(EXIT_FAILURE);
     }
@@ -20,20 +19,20 @@ Config lireConfig(const char* nomFichier) {
     char* stockageTemp[100]; // Tableau temporaire pour garder les mots
     int compteur;
 
-    // --- 1. LECTURE DES ANIMAUX (Ligne 1) ---
-    // On lit toute la première ligne du fichier
+  
+	// On lit toute la première ligne du fichier (animaux)
     if (fgets(ligneLue, 1024, fichier) != NULL) {
         compteur = 0;
 
         // On découpe la phrase à chaque espace " " ou saut de ligne "\n"
         mot = strtok(ligneLue, " \n\r");
 
-        // Tant qu'on trouve des mots...
+       
         while (mot != NULL) {
-            // 1. On réserve la mémoire (taille du mot + 1 pour le caractère de fin)
+            // On réserve la mémoire (taille du mot + 1 pour le caractère de fin)
             stockageTemp[compteur] = malloc(strlen(mot) + 1);
 
-            // 2. On copie le mot trouvé dedans
+            //On copie le mot trouvé dedans
             strcpy(stockageTemp[compteur], mot);
 
             compteur++;
@@ -48,8 +47,7 @@ Config lireConfig(const char* nomFichier) {
         }
     }
 
-    // --- 2. LECTURE DES ORDRES (Ligne 2) ---
-    // On lit toute la deuxième ligne
+    // On lit toute la deuxième ligne (ordres)
     if (fgets(ligneLue, 1024, fichier) != NULL) {
         compteur = 0;
 
@@ -65,7 +63,7 @@ Config lireConfig(const char* nomFichier) {
         }
 
         config.nbOrdres = compteur;
-        // Attention à bien allouer 'ordres' et pas 'animaux'
+       
         config.ordres = malloc(compteur * sizeof(char*));
         for (int i = 0; i < compteur; i++) {
             config.ordres[i] = stockageTemp[i];

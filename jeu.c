@@ -5,20 +5,20 @@
 #include <string.h>
 #include "partie.h"
 
-// Fonction interne pour gérer la rotation (NI et MA)
-// L'animal du BAS (indice 0) passe tout en HAUT.
+
+// fonction qui fait que l'animal du bas (indice 0) passe tout en haut.
 void rotationPodium(Podium* p) {
     if (p->nbAnimaux < 2) return; // Pas de rotation si 0 ou 1 animal
 
-    // 1. On garde l'animal du bas
+    // On garde l'animal du bas
     char* animalDuBas = p->animaux[0];
 
-    // 2. On décale tout le monde vers le bas
+    // On décale tout le monde vers le bas
     for (int i = 0; i < p->nbAnimaux - 1; i++) {
         p->animaux[i] = p->animaux[i + 1];
     }
 
-    // 3. On remet l'animal du bas tout en haut
+    // On remet l'animal du bas tout en haut
     p->animaux[p->nbAnimaux - 1] = animalDuBas;
 }
 
@@ -58,20 +58,20 @@ void appliquerOrdre(Position* pos, char codeInterne) {
         break;
 
     default:
-        // On ignore les erreurs silencieusement ou on affiche pour debug
+        
         break;
     }
 }
 
 void appliquerSequence(Position* pos, const char* sequence) {
     int i = 0;
-    // On parcourt la chaine tant qu'il y a au moins 2 caractères (ex: "KI")
+    // On parcourt la chaine tant qu'il y a au moins 2 caractères 
     while (sequence[i] != '\0' && sequence[i + 1] != '\0') {
 
         char c1 = sequence[i];
         char c2 = sequence[i + 1];
 
-        // Identification de l'ordre (2 lettres -> 1 code interne)
+        // identification de l'ordre (2 lettres -> 1 code interne)
         char codeInterne = 0;
 
         if (c1 == 'K' && c2 == 'I') codeInterne = 'K';
@@ -97,7 +97,7 @@ int positionsEgales(Position a, Position b) {
     if (a.rouge.nbAnimaux != b.rouge.nbAnimaux) return 0;
 
     for (int i = 0; i < a.bleu.nbAnimaux; i++)
-        if (strcmp(a.bleu.animaux[i], b.bleu.animaux[i]) != 0) return 0; // strcmp pour comparer les mots
+        if (strcmp(a.bleu.animaux[i], b.bleu.animaux[i]) != 0) return 0; 
 
     for (int i = 0; i < a.rouge.nbAnimaux; i++)
         if (strcmp(a.rouge.animaux[i], b.rouge.animaux[i]) != 0) return 0;
@@ -106,8 +106,7 @@ int positionsEgales(Position a, Position b) {
 }
 
 void lireOrdres(char* buffer, int taille) {
-    // printf("Votre coup > "); // Optionnel selon le sujet
-    // scanf s'arrête au premier espace, c'est ce qu'on veut ici.
+   
     scanf("%s", buffer);
 }
 
@@ -130,14 +129,14 @@ int testerCarte(const Carte* carte, const char* sequence) {
     // Vérification
     int res = positionsEgales(pos, carte->cible);
 
-    // Nettoyage
+    // on nettoie
     free(pos.bleu.animaux);
     free(pos.rouge.animaux);
 
     return res;
 }
 
-// Les fonctions setposition, setpodium... (pas utilisées dans le main actuel mais gardées pour compiler)
+// Les fonctions pas utilisées dans le main mais gardées pour compiler qd mm
 void setposition(Position* p) {}
 void setpodium(Podium* podium, char** animaux, int nbAnimaux) {}
 void getpodium(const Podium* podium) {}
