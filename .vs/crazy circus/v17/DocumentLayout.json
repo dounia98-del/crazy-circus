@@ -1,42 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\",
+  "WorkspaceRootPath": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\config.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:config.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\partie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:partie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\partie.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:partie.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\jeu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\jeu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:jeu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\config.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:config.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\joueur.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:joueur.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\jeu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:jeu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\joueur.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\joueur.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:joueur.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\joueur.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:joueur.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\jeu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:jeu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\config.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:config.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\partie.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:partie.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\partie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:partie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\config.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3E1EA965-9E62-47CB-ABFB-83AF7B9988E5}|crazy circus.vcxproj|solutionrelative:config.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,78 +46,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "config.h",
-              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\config.h",
+              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\config.h",
               "RelativeDocumentMoniker": "config.h",
-              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\config.h",
+              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\config.h",
               "RelativeToolTip": "config.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-30T16:14:06.163Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "partie.h",
-              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\partie.h",
+              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\partie.h",
               "RelativeDocumentMoniker": "partie.h",
-              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\partie.h",
+              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\partie.h",
               "RelativeToolTip": "partie.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-30T16:59:24.093Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\main.c",
-              "RelativeDocumentMoniker": "main.c",
-              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\main.c",
-              "RelativeToolTip": "main.c",
-              "ViewState": "AgIAANIAAAAAAAAAAAAAAOcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-30T16:12:47.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "jeu.c",
-              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\jeu.c",
+              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\jeu.c",
               "RelativeDocumentMoniker": "jeu.c",
-              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\jeu.c",
+              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\jeu.c",
               "RelativeToolTip": "jeu.c",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-11-30T16:52:54.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "partie.c",
-              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\partie.c",
-              "RelativeDocumentMoniker": "partie.c",
-              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\partie.c",
-              "RelativeToolTip": "partie.c",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGYAAAA/AAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-30T16:59:34.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T16:12:47.372Z"
             },
             {
               "$type": "Bookmark",
@@ -126,36 +106,50 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "config.c",
-              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\config.c",
-              "RelativeDocumentMoniker": "config.c",
-              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\config.c",
-              "RelativeToolTip": "config.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Title": "partie.c",
+              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\partie.c",
+              "RelativeDocumentMoniker": "partie.c",
+              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\partie.c",
+              "RelativeToolTip": "partie.c",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAH4AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-01T21:06:20.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T16:59:34.264Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "config.c",
+              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\config.c",
+              "RelativeDocumentMoniker": "config.c",
+              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\config.c",
+              "RelativeToolTip": "config.c",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAEEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-01T21:06:20.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "jeu.h",
-              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\jeu.h",
+              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\jeu.h",
               "RelativeDocumentMoniker": "jeu.h",
-              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\jeu.h",
+              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\jeu.h",
               "RelativeToolTip": "jeu.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-30T16:53:29.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T16:53:29.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "joueur.c",
-              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\joueur.c",
+              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\joueur.c",
               "RelativeDocumentMoniker": "joueur.c",
-              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\joueur.c",
+              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\joueur.c",
               "RelativeToolTip": "joueur.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
@@ -163,13 +157,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "joueur.h",
-              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\joueur.h",
+              "DocumentMoniker": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\joueur.h",
               "RelativeDocumentMoniker": "joueur.h",
-              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy circus\\crazy circus\\joueur.h",
+              "ToolTip": "C:\\Users\\douni\\OneDrive\\Documents\\but1\\crazy-circus\\joueur.h",
               "RelativeToolTip": "joueur.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-30T16:13:53.086Z"
             }
