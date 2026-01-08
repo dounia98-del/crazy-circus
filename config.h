@@ -10,15 +10,17 @@ typedef struct {
 
 Config lireConfig(const char* nomFichier);
 //@brief Lit et valide la configuration du jeu à partir d'un fichier.
-//@param nomFichier Le nom du fichier de configuration.
+//@param[in] nomFichier Le nom du fichier de configuration.
 //@return Une structure Config contenant les animaux et les ordres autorisés.
+//@pre nomFichier != NULL
 //@note Le fichier doit avoir au moins 2 animaux et 3 ordres autorisés.
 
 void afficherConfig(const Config* config);
 //@brief Affiche la configuration du jeu.
-//@param config Pointeur vers la structure Config à afficher. 
+//@param[in] config Pointeur vers la structure Config à afficher. 
+//@pre config != NULL
 
 void libererConfig(Config* config);
-// @brief Libère la mémoire allouée pour la configuration.
-// @param config Pointeur vers la structure Config à nettoyer.
-
+//@brief Libère la mémoire allouée pour la configuration.
+//@param[in,out] config Pointeur vers la structure Config à nettoyer.
+//@pre config != NULL

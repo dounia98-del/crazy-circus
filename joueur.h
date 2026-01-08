@@ -12,18 +12,16 @@ void lireJoueurs(const char* argv[], int argc);
 //@param argv Tableau des arguments de la ligne de commande.
 //@param argc Nombre d'arguments dans argv.
 //@pre Doit y avoir au moins 2 joueurs avec des noms distincts.
-
+//@return Un tableau dynamique de structures Joueur initialisées.
 Joueur* initialiserJoueurs(int argc, const char* argv[], int* nbJoueurs);
-//@brief Initialise les joueurs du jeu.
-//@param argc Nombre d'arguments dans argv.
-//@param argv Tableau des arguments de la ligne de commande.
-//@param nbJoueurs Pointeur vers un entier où sera stocké le nombre de joueurs initialisés.
+//@brief Initialise le tableau des joueurs à partir des arguments du programme.
+//@param[in]  argc      Nombre d'arguments de la ligne de commande.
+//@param[in]  argv      Tableau des arguments(chaînes de caractères).
+//@param[out] nbJoueurs Pointeur pour stocker le nombre de joueurs créés.
+//@pre argc >= 2 && argv != NULL && nbJoueurs != NULL
 //@return Un tableau dynamique de structures Joueur initialisées.
 
- 
-
-// !!!! metrre les in and out dans les commentaires des fonctions !!!!
-
 void ajouterPoint(Joueur* joueur);
-// @brief Incrémente le score d'un joueur.
-// @param joueur Pointeur vers le joueur qui a gagné.
+//@brief Incrémente le score d'un joueur de 1 point.
+//@param[in, out] joueur Pointeur vers le joueur qui a gagné.
+//@pre joueur != NULL

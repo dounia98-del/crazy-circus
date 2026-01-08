@@ -14,22 +14,25 @@ typedef struct {
 
 
 void lireOrdres(char* buffer, int taille);
-//@brief Lit une séquence d'ordres saisie par l'utilisateur.
-//@param buffer Chaîne où stocker la saisie.
-//@param taille Taille maximale du buffer.
+//@brief Lit une séquence d'ordres saisie par l'utilisateur via l'entrée standard.
+//@param[out] buffer Chaîne où stocker la saisie utilisateur.
+//@param[in]  taille Taille maximale du buffer(pour éviter les débordements).
+//@pre buffer != NULL && taille > 0
 void appliquerOrdre(Position* pos, char ordre);
-//@brief Applique un ordre unique(ex: 'K', 'N') sur une position.
-//@param pos Pointeur vers la position actuelle.
-//@param ordre Le caractère représentant l'ordre interne.
+//@brief Applique un ordre unique(ex: 'K', 'N') sur une position donnée.
+//@param[in, out] pos   Pointeur vers la position actuelle(sera modifiée).
+//@param[in]     ordre Le caractère représentant l'ordre interne.
+//@pre pos != NULL
 
 void appliquerSequence(Position* pos, const char* sequence);
 //@brief Applique une suite d'ordres complète sur une position.
-//@param pos Pointeur vers la position de départ(sera modifiée).
-//@param sequence Chaîne de caractères contenant la suite d'ordres (ex: "KILOMA").
+//@param[in, out] pos      Pointeur vers la position de départ(sera modifiée).
+//@param[in]     sequence Chaîne de caractères contenant la suite d'ordres (ex: "KILOMA").
+//@pre pos != NULL && sequence != NULL
 
 int positionsEgales(Position a, Position b);
-//@brief Compare deux positions pour voir si elles sont identiques.
-//@param a La première position.
-//@param b La deuxième position(généralement la cible).
-//@return 1 si les positions sont identiques, 0 sinon.
+//@brief Compare deux positions pour voir si elles sont strictement identiques.
+//@param[in] a La première position.
+//@param[in] b La deuxième position(généralement la cible).
+//@return 1 si les positions sont identiques(mêmes animaux, même ordre), 0 sinon.
 

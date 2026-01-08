@@ -55,7 +55,19 @@ int main(int argc, const char* argv[]) {
     partie.config = config;
     initPartie(&partie, joueurs, nbJoueurs);
 
-    printf("KI (B -> R) | LO (B <- R) | SO (B <-> R) | NI (B ^) | MA (R ^)\n\n");
+    // 4. Affichage des règles (DYNAMIQUE selon la config)
+    for (int i = 0; i < config.nbOrdres; i++) {
+        char* o = config.ordres[i];
+        if (strcmp(o, "KI") == 0) printf("KI (B -> R)");
+        else if (strcmp(o, "LO") == 0) printf("LO (B <- R)");
+        else if (strcmp(o, "SO") == 0) printf("SO (B <-> R)");
+        else if (strcmp(o, "NI") == 0) printf("NI (B ^)");
+        else if (strcmp(o, "MA") == 0) printf("MA (R ^)");
+
+        // Séparateur " | " sauf pour le dernier
+        if (i < config.nbOrdres - 1) printf(" | ");
+    }
+    printf("\n\n");
 
     // Init Position Courante
     Position posCourante;
