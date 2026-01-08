@@ -4,7 +4,7 @@
 typedef struct {
     char nom[30];   // identité du joueur
     int score;      // points gagnés
-    bool peutjouer;  // true = peut jouer false = éliminé pour ce tour
+    bool peutjouer;  // booleen : true = peut jouer false = éliminé pour ce tour
 } Joueur;
 
 void lireJoueurs(const char* argv[], int argc);
@@ -25,3 +25,5 @@ Joueur* initialiserJoueurs(int argc, const char* argv[], int* nbJoueurs);
 // !!!! metrre les in and out dans les commentaires des fonctions !!!!
 
 void ajouterPoint(Joueur* joueur);
+// @brief Incrémente le score d'un joueur.
+// @param joueur Pointeur vers le joueur qui a gagné.

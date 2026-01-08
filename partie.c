@@ -132,3 +132,25 @@ Carte* tirerCarteAleatoire(Partie* partie) {
 void joueurSuivant(Partie* partie) {
     partie->touractuel = (partie->touractuel + 1) % partie->nbJoueurs;
 }
+
+// Fonction pour nettoyer toute la mémoire allouée dans initPartie
+void libererPartie(Partie* partie) {
+    // 1. On libère le contenu de chaque carte
+    for (int i = 0; i < partie->nbCartes; i++) {
+        Carte* c = &partie->cartes[i];
+
+        // Libération Départ
+        free(c->depart.bleu.animaux);
+        free(c->depart.rouge.animaux);
+
+        // Libération Cible
+        free(c->cible.bleu.animaux);
+        free(c->cible.rouge.animaux);
+    }
+
+    // 2. On libère le tableau de cartes lui-même
+    free(partie->cartes);
+
+    // 3. (Optionnel) Si 'joueurs' a été alloué dynamiquement dans le main, 
+    // on le libère souvent dans le main, mais on peut mettre partie->joueurs = NULL ici par sécurité.
+}

@@ -136,8 +136,3 @@ int testerCarte(const Carte* carte, const char* sequence) {
     return res;
 }
 
-// Les fonctions pas utilisées dans le main mais gardées pour compiler qd mm
-void setposition(Position* p) {}
-void setpodium(Podium* podium, char** animaux, int nbAnimaux) {}
-void getpodium(const Podium* podium) {}
-void afficherposition(const Position* p) {}

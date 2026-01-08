@@ -1,10 +1,10 @@
 #pragma once
 
 typedef struct {
-    char** animaux;
-    int nbAnimaux;
-    char** ordres;
-    int nbOrdres;
+    char** animaux; ///< Tableau des noms des animaux 
+    int nbAnimaux;  ///< Nombre total d'animaux
+    char** ordres;  ///< Tableau des ordres valides 
+    int nbOrdres;   ///< Nombre total d'ordres
 } Config;
 
 
@@ -19,7 +19,6 @@ void afficherConfig(const Config* config);
 //@param config Pointeur vers la structure Config à afficher. 
 
 void libererConfig(Config* config);
-
-
-
+// @brief Libère la mémoire allouée pour la configuration.
+// @param config Pointeur vers la structure Config à nettoyer.
 
