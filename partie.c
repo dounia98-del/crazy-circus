@@ -113,43 +113,43 @@ void getCarte(const Carte *carte) {
   for (int y = hauteurMax - 1; y >= 0; y--) {
     // --- COLONNE 1 : DEPART BLEU (12 char) ---
     if (y < carte->depart.bleu.nbAnimaux)
-      printf("%-12s", carte->depart.bleu.animaux[y]);
+      printf("%-12s ", carte->depart.bleu.animaux[y]);
     else
-      printf("%-12s", "");
+      printf("%-12s ", "");
 
     // --- COLONNE 2 : DEPART ROUGE (12 char) ---
     if (y < carte->depart.rouge.nbAnimaux)
-      printf("%-12s", carte->depart.rouge.animaux[y]);
+      printf("%-12s ", carte->depart.rouge.animaux[y]);
     else
-      printf("%-12s", "");
+      printf("%-12s ", "");
 
     // --- ESPACE CENTRAL (7 char) ---
     printf("       ");
 
     // --- COLONNE 3 : CIBLE BLEU (12 char) ---
     if (y < carte->cible.bleu.nbAnimaux)
-      printf("%-12s", carte->cible.bleu.animaux[y]);
+      printf("%-12s ", carte->cible.bleu.animaux[y]);
     else
-      printf("%-12s", "");
+      printf("%-12s ", "");
 
     // --- COLONNE 4 : CIBLE ROUGE (12 char) ---
     if (y < carte->cible.rouge.nbAnimaux)
-      printf("%-12s", carte->cible.rouge.animaux[y]);
+      printf("%-12s ", carte->cible.rouge.animaux[y]);
     else
-      printf("%-12s", "");
+      printf("%-12s ", "");
 
     printf("\n");
   }
 
   // --- PIED DE PAGE (Alignement strict) ---
-  // On utilise %-12s pour les colonnes et on écrit la flèche "  ==>  " (2
+  // On utilise %-12s  pour les colonnes et on écrit la flèche "  ==>  " (2
   // espaces, flèche, 2 espaces)
 
   // Ligne des tirets
-  printf("%-12s%-12s  ==>  %-12s%-12s\n", "----", "----", "----", "----");
+  printf("%-12s %-12s   ==>  %-12s %-12s \n", "----", "----", "----", "----");
 
   // Ligne des noms (on met 7 espaces au milieu pour remplacer la flèche)
-  printf("%-12s%-12s       %-12s%-12s\n", "BLEU", "ROUGE", "BLEU", "ROUGE");
+  printf("%-12s %-12s        %-12s %-12s \n", "BLEU", "ROUGE", "BLEU", "ROUGE");
 
   printf("\n");
 }

@@ -170,7 +170,6 @@ int main(int argc, const char *argv[]) {
 
   qsort(joueurs, nbJoueurs, sizeof(Joueur), comparerJoueurs);
 
-  printf("\n=== CLASSEMENT ===\n");
   for (int i = 0; i < nbJoueurs; i++) {
     printf("%s %d\n", joueurs[i].nom, joueurs[i].score);
   }
