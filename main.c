@@ -72,10 +72,9 @@ int main(int argc, const char *argv[]) {
   posCourante.bleu.capacite = config.nbAnimaux;
   posCourante.rouge.capacite = config.nbAnimaux;
 
-  posCourante.bleu.nbAnimaux = config.nbAnimaux;
-  posCourante.rouge.nbAnimaux = 0;
-  for (int i = 0; i < config.nbAnimaux; i++)
-    posCourante.bleu.animaux[i] = config.animaux[i];
+  // Position initiale tirée au hasard
+  Carte *carteInit = tirerCarteAleatoire(&partie);
+  copierPosition(&posCourante, &carteInit->depart);
 
   int jeuTermine = 0;
   Carte *carteEnJeu = NULL;
