@@ -1,44 +1,34 @@
-# Checklist de Conformité - Crazy Circus
+# Checklist de Conformité Détaillée - Crazy Circus
 
-Ce document récapitule la conformité du projet par rapport aux exigences du sujet `sujet-s1.02.pdf`.
-
----
-
-## 1. Exigences Fonctionnelles
-
-- [x] **Arguments de ligne de commande** : Les noms des joueurs (minimum 2, distincts) sont récupérés via `argv`. Le programme s'arrête prématurément avec un message informatif si les conditions ne sont pas remplies.
-- [x] **Fichier de configuration (`crazy.cfg`)** : Lecture dynamique des animaux et des ordres autorisés dans le répertoire courant.
-- [x] **Validation de la config** : Le programme s'arrête si le nombre d'animaux est inférieur à 2 ou si le nombre d'ordres est inférieur à 3 (avec message informatif sur une ligne).
-- [x] **Rappel des ordres** : Affichage initial de la ligne de syntaxe des ordres autorisés (ex: `KI (B -> R) | LO (B <- R) ...`).
-- [x] **Pioche de cartes** : Gestion d'un paquet de 24 cartes (pour 3 animaux) sans remise. Fin de partie automatique quand la pioche est vide.
-- [x] **Position atteinte** : La position finale d'un tour devient la position de départ du tour suivant.
+Ce document confirme la vérification de chaque règle spécifique du sujet.
 
 ---
 
-## 2. Logique du Jeu et Ordres
-
-- [x] **KI** : L'animal en haut du podium bleu saute vers le podium rouge.
-- [x] **LO** : L'animal en haut du podium rouge saute vers le podium bleu.
-- [x] **SO** : Échange des sommets des deux podiums.
-- [x] **NI** : Rotation du podium bleu (bas vers haut).
-- [x] **MA** : Rotation du podium rouge (bas vers haut).
-- [x] **Validation de séquence** : Vérification stricte si la séquence fournie par le joueur mène exactement à la position cible.
-- [x] **Gestion des erreurs** : Un joueur qui donne une mauvaise séquence est éliminé pour le tour en cours.
-- [x] **Dernier survivant** : Si un seul joueur reste en lice durant un tour, il remporte le point automatiquement.
+## 1. Initialisation et Jeu
+- [x] **Au moins 2 joueurs** : Vérifié dans `main.c` (`argc < 3`).
+- [x] **Noms distincts** : Vérifié dans `joueur.c` avec un `strcmp` sur les noms déjà saisis.
+- [x] **Configuration (2 animaux / 3 ordres min)** : Vérifié dans `main.c` après la lecture du fichier `crazy.cfg`.
+- [x] **Identification du joueur** : Le programme vérifie que le nom saisi correspond à un joueur enregistré (`indexJoueur == -1`).
+- [x] **Élimination par erreur** : Un joueur qui se trompe (`peutjouer = 0`) ne peut plus proposer de séquence pour le reste du tour.
 
 ---
 
-## 3. Formats et Affichage (Stricts)
-
-- [x] **Alignement des podiums** : Respect strict de l'alignement vertical des animaux sur les podiums et de l'alignement horizontal (Départ ==> Cible).
-- [x] **Messages informatifs** : Libres mais restreints à une seule ligne de texte par message.
-- [x] **Classement final** : Affichage par score décroissant, puis par ordre alphabétique en cas d'égalité. Format strict : `Nom Score`.
+## 2. Séquences et Syntaxe
+- [x] **Droit à l'erreur de syntaxe** : Si une séquence contient un ordre inconnu, le programme affiche un message d'erreur mais ne disqualifie pas le joueur (utilisation de `continue` dans la boucle de saisie).
+- [x] **Attribution des points (Succès)** : Si `testerCarte` est vrai, le joueur gagne un point et une nouvelle carte est tirée.
+- [x] **Attribution des points (Élimination)** : Si la disqualification d'un joueur laisse un seul survivant en lice, ce survivant gagne le point du tour automatiquement.
 
 ---
 
-## 4. Code et Structure
+## 3. Classement Final
+- [x] **Ordre de priorité** :
+    1. Score décroissant.
+    2. Ordre alphabétique (ascendant) en cas d'égalité.
+- [x] **Implémentation** : La fonction `comparerJoueurs` utilise `j2->score - j1->score` (décroissant) et `strcmp(j1->nom, j2->nom)` (ascendant).
+- [x] **Format d'affichage** : Sortie brute `Nom Score` sans décoration superflue, conforme aux exemples.
 
-- [x] **Modularité** : Séparation logique entre `main.c`, `config`, `jeu`, `joueur` et `partie`.
-- [x] **Documentation** : Tous les fichiers `.h` contiennent les prototypes documentés (rôles, paramètres, pré-conditions).
-- [x] **Tests Unitaires** : Isolés dans un dossier `tests/` avec un exécutable autonome (`tests/tests.c`).
-- [x] **Rapport de projet** : Document `Report.md` complété détaillant les choix techniques et corrections.
+---
+
+## 4. Nettoyage de la Mémoire
+- [x] **Libération complète** : Toutes les allocations (joueurs, config, cartes, podiums) sont libérées via `libererConfig`, `libererPartie` et `free` en fin de `main`.
+- [x] **Robustesse** : Utilisation de `nbCartesTotal` pour garantir que même les cartes déjà piochées sont libérées de la mémoire.
