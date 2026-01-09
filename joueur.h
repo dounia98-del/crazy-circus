@@ -2,26 +2,20 @@
 #include <stdbool.h>
 
 typedef struct {
-    char nom[30];   // identité du joueur
-    int score;      // points gagnés
-    bool peutjouer;  // booleen : true = peut jouer false = éliminé pour ce tour
+    char nom[30];   // identitï¿½ du joueur
+    int score;      // points gagnï¿½s
+    bool peutjouer;  // booleen : true = peut jouer false = ï¿½liminï¿½ pour ce tour
 } Joueur;
 
-void lireJoueurs(const char* argv[], int argc);
-//@brief Valide les joueurs passé en ligne de commande .
-//@param argv Tableau des arguments de la ligne de commande.
-//@param argc Nombre d'arguments dans argv.
-//@pre Doit y avoir au moins 2 joueurs avec des noms distincts.
-//@return Un tableau dynamique de structures Joueur initialisées.
 Joueur* initialiserJoueurs(int argc, const char* argv[], int* nbJoueurs);
-//@brief Initialise le tableau des joueurs à partir des arguments du programme.
+//@brief Initialise le tableau des joueurs ï¿½ partir des arguments du programme.
 //@param[in]  argc      Nombre d'arguments de la ligne de commande.
-//@param[in]  argv      Tableau des arguments(chaînes de caractères).
-//@param[out] nbJoueurs Pointeur pour stocker le nombre de joueurs créés.
+//@param[in]  argv      Tableau des arguments(chaï¿½nes de caractï¿½res).
+//@param[out] nbJoueurs Pointeur pour stocker le nombre de joueurs crï¿½ï¿½s.
 //@pre argc >= 2 && argv != NULL && nbJoueurs != NULL
-//@return Un tableau dynamique de structures Joueur initialisées.
+//@return Un tableau dynamique de structures Joueur initialisï¿½es.
 
 void ajouterPoint(Joueur* joueur);
-//@brief Incrémente le score d'un joueur de 1 point.
-//@param[in, out] joueur Pointeur vers le joueur qui a gagné.
+//@brief Incrï¿½mente le score d'un joueur de 1 point.
+//@param[in, out] joueur Pointeur vers le joueur qui a gagnï¿½.
 //@pre joueur != NULL
