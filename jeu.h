@@ -2,37 +2,43 @@
 #include <stdio.h>
 
 typedef struct {
-    char** animaux;  // tableau de noms d'animaux
-    int nbAnimaux;  // Nombre actuel d'animaux sur le podium
-    int capacite;  //  Capacité maximale
+  char **animaux; // tableau de noms d'animaux
+  int nbAnimaux;  // Nombre actuel d'animaux sur le podium
+  int capacite;   //  CapacitÃ© maximale
 } Podium;
 
 typedef struct {
-    Podium bleu;
-    Podium rouge;
+  Podium bleu;
+  Podium rouge;
 } Position;
 
-
-void lireOrdres(char* buffer, int taille);
-//@brief Lit une séquence d'ordres saisie par l'utilisateur via l'entrée standard.
-//@param[out] buffer Chaîne où stocker la saisie utilisateur.
-//@param[in]  taille Taille maximale du buffer(pour éviter les débordements).
+void lireOrdres(char *buffer, int taille);
+//@brief Lit une sÃ©quence d'ordres saisie par l'utilisateur via l'entrÃ©e
+//standard.
+//@param[out] buffer ChaÃ®ne oÃ¹ stocker la saisie utilisateur.
+//@param[in]  taille Taille maximale du buffer(pour Ã©viter les dÃ©bordements).
 //@pre buffer != NULL && taille > 0
-void appliquerOrdre(Position* pos, char ordre);
-//@brief Applique un ordre unique(ex: 'K', 'N') sur une position donnée.
-//@param[in, out] pos   Pointeur vers la position actuelle(sera modifiée).
-//@param[in]     ordre Le caractère représentant l'ordre interne.
+void appliquerOrdre(Position *pos, char ordre);
+//@brief Applique un ordre unique(ex: 'K', 'N') sur une position donnÃ©e.
+//@param[in, out] pos   Pointeur vers la position actuelle(sera modifiÃ©e).
+//@param[in]     ordre Le caractÃ¨re reprÃ©sentant l'ordre interne.
 //@pre pos != NULL
 
-void appliquerSequence(Position* pos, const char* sequence);
-//@brief Applique une suite d'ordres complète sur une position.
-//@param[in, out] pos      Pointeur vers la position de départ(sera modifiée).
-//@param[in]     sequence Chaîne de caractères contenant la suite d'ordres (ex: "KILOMA").
+void appliquerSequence(Position *pos, const char *sequence);
+//@brief Applique une suite d'ordres complÃ¨te sur une position.
+//@param[in, out] pos      Pointeur vers la position de dÃ©part(sera modifiÃ©e).
+//@param[in]     sequence ChaÃ®ne de caractÃ¨res contenant la suite d'ordres (ex:
+//"KILOMA").
 //@pre pos != NULL && sequence != NULL
 
 int positionsEgales(Position a, Position b);
 //@brief Compare deux positions pour voir si elles sont strictement identiques.
-//@param[in] a La première position.
-//@param[in] b La deuxième position(généralement la cible).
-//@return 1 si les positions sont identiques(mêmes animaux, même ordre), 0 sinon.
+//@param[in] a La premiÃ¨re position.
+//@param[in] b La deuxiÃ¨me position(gÃ©nÃ©ralement la cible).
+//@return 1 si les positions sont identiques(mÃªmes animaux, mÃªme ordre), 0
+//sinon.
 
+/**
+ * @brief Copie l'Ã©tat d'une position source vers une destination.
+ */
+void copierPosition(Position *destination, const Position *source);

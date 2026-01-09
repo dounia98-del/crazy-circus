@@ -150,3 +150,13 @@ int testerCarte(const Carte *carte, const char *sequence) {
 
   return res;
 }
+
+void copierPosition(Position* destination, const Position* source) {
+    destination->bleu.nbAnimaux = source->bleu.nbAnimaux;
+    for (int i = 0; i < source->bleu.nbAnimaux; i++)
+        destination->bleu.animaux[i] = source->bleu.animaux[i];
+
+    destination->rouge.nbAnimaux = source->rouge.nbAnimaux;
+    for (int i = 0; i < source->rouge.nbAnimaux; i++)
+        destination->rouge.animaux[i] = source->rouge.animaux[i];
+}

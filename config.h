@@ -1,26 +1,32 @@
 #pragma once
 
 typedef struct {
-    char** animaux; ///< Tableau des noms des animaux 
-    int nbAnimaux;  ///< Nombre total d'animaux
-    char** ordres;  ///< Tableau des ordres valides 
-    int nbOrdres;   ///< Nombre total d'ordres
+  char **animaux; ///< Tableau des noms des animaux
+  int nbAnimaux;  ///< Nombre total d'animaux
+  char **ordres;  ///< Tableau des ordres valides
+  int nbOrdres;   ///< Nombre total d'ordres
 } Config;
 
-
-Config lireConfig(const char* nomFichier);
-//@brief Lit et valide la configuration du jeu à partir d'un fichier.
+Config lireConfig(const char *nomFichier);
+//@brief Lit et valide la configuration du jeu Ã  partir d'un fichier.
 //@param[in] nomFichier Le nom du fichier de configuration.
-//@return Une structure Config contenant les animaux et les ordres autorisés.
+//@return Une structure Config contenant les animaux et les ordres autorisÃ©s.
 //@pre nomFichier != NULL
-//@note Le fichier doit avoir au moins 2 animaux et 3 ordres autorisés.
+//@note Le fichier doit avoir au moins 2 animaux et 3 ordres autorisÃ©s.
 
-void afficherConfig(const Config* config);
+void afficherConfig(const Config *config);
 //@brief Affiche la configuration du jeu.
-//@param[in] config Pointeur vers la structure Config à afficher. 
+//@param[in] config Pointeur vers la structure Config Ã  afficher.
 //@pre config != NULL
 
-void libererConfig(Config* config);
-//@brief Libère la mémoire allouée pour la configuration.
-//@param[in,out] config Pointeur vers la structure Config à nettoyer.
+void libererConfig(Config *config);
+//@brief LibÃ¨re la mÃ©moire allouÃ©e pour la configuration.
+//@param[in,out] config Pointeur vers la structure Config Ã  nettoyer.
 //@pre config != NULL
+
+/**
+ * @brief VÃ©rifie si un code d'ordre (ex: "KI") est prÃ©sent dans la
+ * configuration.
+ * @return 1 si valide, 0 sinon.
+ */
+int estOrdreValide(const char *ordre, const Config *config);

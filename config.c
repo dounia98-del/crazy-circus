@@ -4,99 +4,107 @@
 #include <stdlib.h>
 #include <string.h>
 
-Config lireConfig(const char* nomFichier) {
-    Config config;
-    FILE* fichier = fopen(nomFichier, "r");
+Config lireConfig(const char *nomFichier) {
+  Config config;
+  config.nbAnimaux = 0;
+  config.nbOrdres = 0;
+  config.animaux = NULL;
+  config.ordres = NULL;
+  FILE *fichier = fopen(nomFichier, "r");
 
-    if (!fichier) {
-        printf("Erreur : impossible d'ouvrir le fichier %s\n", nomFichier);
-        getchar();
-        exit(EXIT_FAILURE);
+  if (!fichier) {
+    printf("Erreur : impossible d'ouvrir le fichier %s\n", nomFichier);
+    getchar();
+    exit(EXIT_FAILURE);
+  }
+
+  char ligneLue[1024];     // Pour stocker la ligne lue dans le fichier
+  char *mot;               // Pointeur vers le mot d√©coup√©
+  char *stockageTemp[100]; // Tableau temporaire pour garder les mots
+  int compteur;
+
+  // On lit toute la premi√®re ligne du fichier (animaux)
+  if (fgets(ligneLue, 1024, fichier) != NULL) {
+    compteur = 0;
+
+    // On d√©coupe la phrase √† chaque espace " " ou saut de ligne "\n"
+    mot = strtok(ligneLue, " \n\r");
+
+    while (mot != NULL && compteur < 100) {
+      // On r√©serve la m√©moire (taille du mot + 1 pour le caract√®re de fin)
+      stockageTemp[compteur] = malloc(strlen(mot) + 1);
+
+      // On copie le mot trouv√© dedans
+      strcpy(stockageTemp[compteur], mot);
+
+      compteur++;
+      mot = strtok(NULL, " \n\r"); // On passe au mot suivant
     }
 
-    char ligneLue[1024];   // Pour stocker la ligne lue dans le fichier
-    char* mot;             // Pointeur vers le mot dÈcoupÈ
-    char* stockageTemp[100]; // Tableau temporaire pour garder les mots
-    int compteur;
+    // On enregistre le r√©sultat final dans la structure
+    config.nbAnimaux = compteur;
+    config.animaux = malloc(compteur * sizeof(char *));
+    for (int i = 0; i < compteur; i++) {
+      config.animaux[i] = stockageTemp[i];
+    }
+  }
 
-  
-	// On lit toute la premiËre ligne du fichier (animaux)
-    if (fgets(ligneLue, 1024, fichier) != NULL) {
-        compteur = 0;
+  // On lit toute la deuxi√®me ligne (ordres)
+  if (fgets(ligneLue, 1024, fichier) != NULL) {
+    compteur = 0;
 
-        // On dÈcoupe la phrase ‡ chaque espace " " ou saut de ligne "\n"
-        mot = strtok(ligneLue, " \n\r");
+    mot = strtok(ligneLue, " \n\r");
 
-       
-        while (mot != NULL) {
-            // On rÈserve la mÈmoire (taille du mot + 1 pour le caractËre de fin)
-            stockageTemp[compteur] = malloc(strlen(mot) + 1);
+    while (mot != NULL && compteur < 100) {
+      // M√™mes √©tapes : allocation + copie
+      stockageTemp[compteur] = malloc(strlen(mot) + 1);
+      strcpy(stockageTemp[compteur], mot);
 
-            //On copie le mot trouvÈ dedans
-            strcpy(stockageTemp[compteur], mot);
-
-            compteur++;
-            mot = strtok(NULL, " \n\r"); // On passe au mot suivant
-        }
-
-        // On enregistre le rÈsultat final dans la structure
-        config.nbAnimaux = compteur;
-        config.animaux = malloc(compteur * sizeof(char*));
-        for (int i = 0; i < compteur; i++) {
-            config.animaux[i] = stockageTemp[i];
-        }
+      compteur++;
+      mot = strtok(NULL, " \n\r");
     }
 
-    // On lit toute la deuxiËme ligne (ordres)
-    if (fgets(ligneLue, 1024, fichier) != NULL) {
-        compteur = 0;
+    config.nbOrdres = compteur;
 
-        mot = strtok(ligneLue, " \n\r");
-
-        while (mot != NULL) {
-            // MÍmes Ètapes : allocation + copie
-            stockageTemp[compteur] = malloc(strlen(mot) + 1);
-            strcpy(stockageTemp[compteur], mot);
-
-            compteur++;
-            mot = strtok(NULL, " \n\r");
-        }
-
-        config.nbOrdres = compteur;
-       
-        config.ordres = malloc(compteur * sizeof(char*));
-        for (int i = 0; i < compteur; i++) {
-            config.ordres[i] = stockageTemp[i];
-        }
+    config.ordres = malloc(compteur * sizeof(char *));
+    for (int i = 0; i < compteur; i++) {
+      config.ordres[i] = stockageTemp[i];
     }
+  }
 
-    fclose(fichier);
-    return config;
+  fclose(fichier);
+  return config;
 }
 
-void afficherConfig(const Config* config) {
-    printf("Animaux (%d) : ", config->nbAnimaux);
-    for (int i = 0; i < config->nbAnimaux; i++) {
-        printf("%s ", config->animaux[i]);
-    }
-    printf("\n");
+void afficherConfig(const Config *config) {
+  printf("Animaux (%d) : ", config->nbAnimaux);
+  for (int i = 0; i < config->nbAnimaux; i++) {
+    printf("%s ", config->animaux[i]);
+  }
+  printf("\n");
 
-    printf("Ordres (%d) : ", config->nbOrdres);
-    for (int i = 0; i < config->nbOrdres; i++) {
-        printf("%s ", config->ordres[i]);
-    }
-    printf("\n");
+  printf("Ordres (%d) : ", config->nbOrdres);
+  for (int i = 0; i < config->nbOrdres; i++) {
+    printf("%s ", config->ordres[i]);
+  }
+  printf("\n");
 }
 
-void libererConfig(Config* config) {
-    // On libËre la mÈmoire de chaque mot, puis du tableau
-    for (int i = 0; i < config->nbAnimaux; i++) {
-        free(config->animaux[i]);
-    }
-    free(config->animaux);
+void libererConfig(Config *config) {
+  // On lib√®re la m√©moire de chaque mot, puis du tableau
+  for (int i = 0; i < config->nbAnimaux; i++) {
+    free(config->animaux[i]);
+  }
+  free(config->animaux);
 
+  for (int i = 0; i < config->nbOrdres; i++) {
+    free(config->ordres[i]);
+  }
+  free(config->ordres);
+}
+int estOrdreValide(const char* ordre, const Config* config) {
     for (int i = 0; i < config->nbOrdres; i++) {
-        free(config->ordres[i]);
+        if (strcmp(ordre, config->ordres[i]) == 0) return 1;
     }
-    free(config->ordres);
+    return 0;
 }

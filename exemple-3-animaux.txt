@@ -1,0 +1,207 @@
+KI (B -> R) | LO (B <- R) | SO (B <-> R) | NI (B ^) | MA (R ^)
+
+OURS                        LION    
+LION                        ELEPHANT
+ELEPHANT                    OURS    
+----      ----   ==>  ----  ----    
+BLEU      ROUGE       BLEU  ROUGE   
+
+DP KIKISOKI
+DP gagne un point
+
+      LION                         
+      ELEPHANT       LION          
+      OURS           OURS  ELEPHANT
+----  ----      ==>  ----  ----    
+BLEU  ROUGE          BLEU  ROUGE   
+
+DP MALOLO
+DP gagne un point
+
+                           OURS    
+LION                       ELEPHANT
+OURS  ELEPHANT             LION    
+----  ----      ==>  ----  ----    
+BLEU  ROUGE          BLEU  ROUGE   
+
+DP KIMAKI
+DP gagne un point
+
+      OURS                 LION    
+      ELEPHANT             OURS    
+      LION                 ELEPHANT
+----  ----      ==>  ----  ----    
+BLEU  ROUGE          BLEU  ROUGE   
+
+DP MA
+DP gagne un point
+
+      LION           LION           
+      OURS           ELEPHANT       
+      ELEPHANT       OURS           
+----  ----      ==>  ----      ---- 
+BLEU  ROUGE          BLEU      ROUGE
+
+DP LOLOLONI
+DP gagne un point
+
+LION                        OURS    
+ELEPHANT                    LION    
+OURS                        ELEPHANT
+----      ----   ==>  ----  ----    
+BLEU      ROUGE       BLEU  ROUGE   
+
+DP KIKIMAKI
+DP gagne un point
+
+      OURS                          
+      LION           OURS           
+      ELEPHANT       ELEPHANT  LION 
+----  ----      ==>  ----      ---- 
+BLEU  ROUGE          BLEU      ROUGE
+
+DP MALOLO
+DP gagne un point
+
+                      OURS           
+OURS                  ELEPHANT       
+ELEPHANT  LION        LION           
+----      ----   ==>  ----      ---- 
+BLEU      ROUGE       BLEU      ROUGE
+
+DP LONINI
+DP gagne un point
+
+OURS                                 
+ELEPHANT              ELEPHANT       
+LION                  OURS      LION 
+----      ----   ==>  ----      ---- 
+BLEU      ROUGE       BLEU      ROUGE
+
+DP NIKINI
+DP gagne un point
+
+ELEPHANT                        OURS 
+OURS      LION        ELEPHANT  LION 
+----      ----   ==>  ----      ---- 
+BLEU      ROUGE       BLEU      ROUGE
+
+DP KISO
+DP gagne un point
+
+          OURS              ELEPHANT
+ELEPHANT  LION        OURS  LION    
+----      ----   ==>  ----  ----    
+BLEU      ROUGE       BLEU  ROUGE   
+
+DP SO
+DP gagne un point
+
+      ELEPHANT                 LION 
+OURS  LION           ELEPHANT  OURS 
+----  ----      ==>  ----      ---- 
+BLEU  ROUGE          BLEU      ROUGE
+
+DP SOMA
+DP gagne un point
+
+                      LION           
+          LION        OURS           
+ELEPHANT  OURS        ELEPHANT       
+----      ----   ==>  ----      ---- 
+BLEU      ROUGE       BLEU      ROUGE
+
+DP LOSOLO
+DP gagne un point
+
+LION                                
+OURS                  OURS          
+ELEPHANT              LION  ELEPHANT
+----      ----   ==>  ----  ----    
+BLEU      ROUGE       BLEU  ROUGE   
+
+DP NIKINI
+DP gagne un point
+
+OURS                       LION    
+LION  ELEPHANT       OURS  ELEPHANT
+----  ----      ==>  ----  ----    
+BLEU  ROUGE          BLEU  ROUGE   
+
+DP KISO
+DP gagne un point
+
+                     ELEPHANT       
+      LION           OURS           
+OURS  ELEPHANT       LION           
+----  ----      ==>  ----      ---- 
+BLEU  ROUGE          BLEU      ROUGE
+
+DP LONILO
+DP gagne un point
+
+ELEPHANT                    ELEPHANT
+OURS                        LION    
+LION                        OURS    
+----      ----   ==>  ----  ----    
+BLEU      ROUGE       BLEU  ROUGE   
+
+DP KIKIKIMA
+DP gagne un point
+
+      ELEPHANT                      
+      LION           LION           
+      OURS           ELEPHANT  OURS 
+----  ----      ==>  ----      ---- 
+BLEU  ROUGE          BLEU      ROUGE
+
+DP LOLO
+DP gagne un point
+
+LION                  ELEPHANT       
+ELEPHANT  OURS        LION      OURS 
+----      ----   ==>  ----      ---- 
+BLEU      ROUGE       BLEU      ROUGE
+
+DP NI
+DP gagne un point
+
+                      ELEPHANT       
+ELEPHANT              LION           
+LION      OURS        OURS           
+----      ----   ==>  ----      ---- 
+BLEU      ROUGE       BLEU      ROUGE
+
+DP LONINI
+DP gagne un point
+
+ELEPHANT                            
+LION                        ELEPHANT
+OURS                  LION  OURS    
+----      ----   ==>  ----  ----    
+BLEU      ROUGE       BLEU  ROUGE   
+
+DP NIKIKI
+DP gagne un point
+
+                           ELEPHANT
+      ELEPHANT             OURS    
+LION  OURS                 LION    
+----  ----      ==>  ----  ----    
+BLEU  ROUGE          BLEU  ROUGE   
+
+DP KIMAMA
+DP gagne un point
+
+      ELEPHANT                     
+      OURS                 OURS    
+      LION           LION  ELEPHANT
+----  ----      ==>  ----  ----    
+BLEU  ROUGE          BLEU  ROUGE   
+
+DP MALOMA
+DP gagne un point
+
+DP 23
+JR 0
+MZ 0

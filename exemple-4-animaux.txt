@@ -1,0 +1,1152 @@
+KI (B -> R) | LO (B <- R) | SO (B <-> R) | NI (B ^) | MA (R ^)
+
+      MOUSTIQUE                          
+      PUCE                     MOUSTIQUE 
+      FOURMI                   COCCINELLE
+      COCCINELLE       FOURMI  PUCE      
+----  ----        ==>  ----    ----      
+BLEU  ROUGE            BLEU    ROUGE     
+
+DP LOMAMASO
+DP gagne un point
+
+        MOUSTIQUE        PUCE                 
+        COCCINELLE       FOURMI               
+FOURMI  PUCE             COCCINELLE  MOUSTIQUE
+----    ----        ==>  ----        ----     
+BLEU    ROUGE            BLEU        ROUGE    
+
+DP LOLONINISO
+DP gagne un point
+
+                                  MOUSTIQUE 
+PUCE                              FOURMI    
+FOURMI                            COCCINELLE
+COCCINELLE  MOUSTIQUE             PUCE      
+----        ----       ==>  ----  ----      
+BLEU        ROUGE           BLEU  ROUGE     
+
+DP KIKISOKIMA
+DP gagne un point
+
+      MOUSTIQUE                          
+      FOURMI           COCCINELLE        
+      COCCINELLE       PUCE              
+      PUCE             MOUSTIQUE   FOURMI
+----  ----        ==>  ----        ----  
+BLEU  ROUGE            BLEU        ROUGE 
+
+DP LOMALOLOSO
+DP gagne un point
+
+                         PUCE             
+COCCINELLE               MOUSTIQUE        
+PUCE                     COCCINELLE       
+MOUSTIQUE   FOURMI       FOURMI           
+----        ----    ==>  ----        ---- 
+BLEU        ROUGE        BLEU        ROUGE
+
+DP SOLONINI
+DP gagne un point
+
+PUCE                          FOURMI    
+MOUSTIQUE                     COCCINELLE
+COCCINELLE                    PUCE      
+FOURMI                        MOUSTIQUE 
+----        ----   ==>  ----  ----      
+BLEU        ROUGE       BLEU  ROUGE     
+
+DP KIKIMAKIKI
+DP gagne un point
+
+      FOURMI                             
+      COCCINELLE                         
+      PUCE             MOUSTIQUE   FOURMI
+      MOUSTIQUE        COCCINELLE  PUCE  
+----  ----        ==>  ----        ----  
+BLEU  ROUGE            BLEU        ROUGE 
+
+DP LOSOMALO
+DP gagne un point
+
+                               COCCINELLE
+                               FOURMI    
+MOUSTIQUE   FOURMI             PUCE      
+COCCINELLE  PUCE               MOUSTIQUE 
+----        ----    ==>  ----  ----      
+BLEU        ROUGE        BLEU  ROUGE     
+
+DP KIMAMAKI
+DP gagne un point
+
+      COCCINELLE                            
+      FOURMI                       PUCE     
+      PUCE                         MOUSTIQUE
+      MOUSTIQUE        COCCINELLE  FOURMI   
+----  ----        ==>  ----        ----     
+BLEU  ROUGE            BLEU        ROUGE    
+
+DP LOMAMA
+DP gagne un point
+
+                                  PUCE      
+            PUCE                  FOURMI    
+            MOUSTIQUE             COCCINELLE
+COCCINELLE  FOURMI                MOUSTIQUE 
+----        ----       ==>  ----  ----      
+BLEU        ROUGE           BLEU  ROUGE     
+
+DP SOMAKI
+DP gagne un point
+
+      PUCE                             
+      FOURMI                 MOUSTIQUE 
+      COCCINELLE             FOURMI    
+      MOUSTIQUE        PUCE  COCCINELLE
+----  ----        ==>  ----  ----      
+BLEU  ROUGE            BLEU  ROUGE     
+
+DP LOMA
+DP gagne un point
+
+      MOUSTIQUE                             
+      FOURMI           COCCINELLE  MOUSTIQUE
+PUCE  COCCINELLE       PUCE        FOURMI   
+----  ----        ==>  ----        ----     
+BLEU  ROUGE            BLEU        ROUGE    
+
+DP MALO
+DP gagne un point
+
+                            PUCE             
+                            FOURMI           
+COCCINELLE  MOUSTIQUE       COCCINELLE       
+PUCE        FOURMI          MOUSTIQUE        
+----        ----       ==>  ----        ---- 
+BLEU        ROUGE           BLEU        ROUGE
+
+DP SOLOLONI
+DP gagne un point
+
+PUCE                                     
+FOURMI                  COCCINELLE       
+COCCINELLE              MOUSTIQUE        
+MOUSTIQUE               FOURMI      PUCE 
+----        ----   ==>  ----        ---- 
+BLEU        ROUGE       BLEU        ROUGE
+
+DP KININI
+DP gagne un point
+
+COCCINELLE                                   
+MOUSTIQUE               PUCE       FOURMI    
+FOURMI      PUCE        MOUSTIQUE  COCCINELLE
+----        ----   ==>  ----       ----      
+BLEU        ROUGE       BLEU       ROUGE     
+
+DP SONIKI
+DP gagne un point
+
+                            COCCINELLE       
+                            FOURMI           
+PUCE       FOURMI           MOUSTIQUE        
+MOUSTIQUE  COCCINELLE       PUCE             
+----       ----        ==>  ----        ---- 
+BLEU       ROUGE            BLEU        ROUGE
+
+DP NILOLO
+DP gagne un point
+
+COCCINELLE                                   
+FOURMI                  FOURMI               
+MOUSTIQUE               PUCE                 
+PUCE                    COCCINELLE  MOUSTIQUE
+----        ----   ==>  ----        ----     
+BLEU        ROUGE       BLEU        ROUGE    
+
+DP NINIKINI
+DP gagne un point
+
+FOURMI                            COCCINELLE
+PUCE                              MOUSTIQUE 
+COCCINELLE  MOUSTIQUE       PUCE  FOURMI    
+----        ----       ==>  ----  ----      
+BLEU        ROUGE           BLEU  ROUGE     
+
+DP KINIMAKI
+DP gagne un point
+
+                       FOURMI           
+      COCCINELLE       COCCINELLE       
+      MOUSTIQUE        MOUSTIQUE        
+PUCE  FOURMI           PUCE             
+----  ----        ==>  ----        ---- 
+BLEU  ROUGE            BLEU        ROUGE
+
+DP LOSOLOLO
+DP gagne un point
+
+FOURMI                        PUCE      
+COCCINELLE                    COCCINELLE
+MOUSTIQUE                     FOURMI    
+PUCE                          MOUSTIQUE 
+----        ----   ==>  ----  ----      
+BLEU        ROUGE       BLEU  ROUGE     
+
+DP KIKIKIMAMAKI
+DP gagne un point
+
+      PUCE                   COCCINELLE
+      COCCINELLE             PUCE      
+      FOURMI                 MOUSTIQUE 
+      MOUSTIQUE              FOURMI    
+----  ----        ==>  ----  ----      
+BLEU  ROUGE            BLEU  ROUGE     
+
+DP LOLONIMAKIKI
+DP gagne un point
+
+      COCCINELLE                            
+      PUCE                         MOUSTIQUE
+      MOUSTIQUE                    FOURMI   
+      FOURMI           COCCINELLE  PUCE     
+----  ----        ==>  ----        ----     
+BLEU  ROUGE            BLEU        ROUGE    
+
+DP LOMAMA
+DP gagne un point
+
+                                  FOURMI    
+            MOUSTIQUE             PUCE      
+            FOURMI                COCCINELLE
+COCCINELLE  PUCE                  MOUSTIQUE 
+----        ----       ==>  ----  ----      
+BLEU        ROUGE           BLEU  ROUGE     
+
+DP KIMAMA
+DP gagne un point
+
+      FOURMI                                
+      PUCE                                  
+      COCCINELLE       COCCINELLE  FOURMI   
+      MOUSTIQUE        PUCE        MOUSTIQUE
+----  ----        ==>  ----        ----     
+BLEU  ROUGE            BLEU        ROUGE    
+
+DP LOLONISO
+DP gagne un point
+
+                                  COCCINELLE
+                                  MOUSTIQUE 
+COCCINELLE  FOURMI                PUCE      
+PUCE        MOUSTIQUE             FOURMI    
+----        ----       ==>  ----  ----      
+BLEU        ROUGE           BLEU  ROUGE     
+
+DP KISOMAKI
+DP gagne un point
+
+      COCCINELLE                            
+      MOUSTIQUE                             
+      PUCE             FOURMI      PUCE     
+      FOURMI           COCCINELLE  MOUSTIQUE
+----  ----        ==>  ----        ----     
+BLEU  ROUGE            BLEU        ROUGE    
+
+DP LOMALOMA
+DP gagne un point
+
+                            PUCE             
+                            MOUSTIQUE        
+FOURMI      PUCE            FOURMI           
+COCCINELLE  MOUSTIQUE       COCCINELLE       
+----        ----       ==>  ----        ---- 
+BLEU        ROUGE           BLEU        ROUGE
+
+DP LOSOLO
+DP gagne un point
+
+PUCE                                    
+MOUSTIQUE                     MOUSTIQUE 
+FOURMI                        COCCINELLE
+COCCINELLE              PUCE  FOURMI    
+----        ----   ==>  ----  ----      
+BLEU        ROUGE       BLEU  ROUGE     
+
+DP KIKIKIMASOMA
+DP gagne un point
+
+      MOUSTIQUE        PUCE              
+      COCCINELLE       MOUSTIQUE         
+PUCE  FOURMI           COCCINELLE  FOURMI
+----  ----        ==>  ----        ----  
+BLEU  ROUGE            BLEU        ROUGE 
+
+DP LOSOLONI
+DP gagne un point
+
+PUCE                     MOUSTIQUE         
+MOUSTIQUE                COCCINELLE        
+COCCINELLE  FOURMI       PUCE        FOURMI
+----        ----    ==>  ----        ----  
+BLEU        ROUGE        BLEU        ROUGE 
+
+DP NINI
+DP gagne un point
+
+MOUSTIQUE                PUCE              
+COCCINELLE               COCCINELLE        
+PUCE        FOURMI       MOUSTIQUE   FOURMI
+----        ----    ==>  ----        ----  
+BLEU        ROUGE        BLEU        ROUGE 
+
+DP KISOLONI
+DP gagne un point
+
+                         FOURMI           
+PUCE                     MOUSTIQUE        
+COCCINELLE               PUCE             
+MOUSTIQUE   FOURMI       COCCINELLE       
+----        ----    ==>  ----        ---- 
+BLEU        ROUGE        BLEU        ROUGE
+
+DP NILO
+DP gagne un point
+
+FOURMI                  MOUSTIQUE        
+MOUSTIQUE               FOURMI           
+PUCE                    PUCE             
+COCCINELLE              COCCINELLE       
+----        ----   ==>  ----        ---- 
+BLEU        ROUGE       BLEU        ROUGE
+
+DP KISOLO
+DP gagne un point
+
+MOUSTIQUE               PUCE             
+FOURMI                  COCCINELLE       
+PUCE                    FOURMI           
+COCCINELLE              MOUSTIQUE        
+----        ----   ==>  ----        ---- 
+BLEU        ROUGE       BLEU        ROUGE
+
+DP KISOLONINI
+DP gagne un point
+
+PUCE                                         
+COCCINELLE                                   
+FOURMI                  FOURMI     COCCINELLE
+MOUSTIQUE               MOUSTIQUE  PUCE      
+----        ----   ==>  ----       ----      
+BLEU        ROUGE       BLEU       ROUGE     
+
+DP KIKI
+DP gagne un point
+
+                            COCCINELLE       
+                            MOUSTIQUE        
+FOURMI     COCCINELLE       PUCE             
+MOUSTIQUE  PUCE             FOURMI           
+----       ----        ==>  ----        ---- 
+BLEU       ROUGE            BLEU        ROUGE
+
+DP LOSONILO
+DP gagne un point
+
+COCCINELLE                                   
+MOUSTIQUE                          FOURMI    
+PUCE                               PUCE      
+FOURMI                  MOUSTIQUE  COCCINELLE
+----        ----   ==>  ----       ----      
+BLEU        ROUGE       BLEU       ROUGE     
+
+DP KIKISOKISO
+DP gagne un point
+
+           FOURMI           FOURMI               
+           PUCE             MOUSTIQUE            
+MOUSTIQUE  COCCINELLE       PUCE       COCCINELLE
+----       ----        ==>  ----       ----      
+BLEU       ROUGE            BLEU       ROUGE     
+
+DP LOLONINI
+DP gagne un point
+
+FOURMI                      MOUSTIQUE            
+MOUSTIQUE                   PUCE                 
+PUCE       COCCINELLE       FOURMI     COCCINELLE
+----       ----        ==>  ----       ----      
+BLEU       ROUGE            BLEU       ROUGE     
+
+DP NINI
+DP gagne un point
+
+MOUSTIQUE                                        
+PUCE                        MOUSTIQUE  COCCINELLE
+FOURMI     COCCINELLE       PUCE       FOURMI    
+----       ----        ==>  ----       ----      
+BLEU       ROUGE            BLEU       ROUGE     
+
+DP NIKIMA
+DP gagne un point
+
+                            COCCINELLE       
+                            PUCE             
+MOUSTIQUE  COCCINELLE       MOUSTIQUE        
+PUCE       FOURMI           FOURMI           
+----       ----        ==>  ----        ---- 
+BLEU       ROUGE            BLEU        ROUGE
+
+DP MASOLONILO
+DP gagne un point
+
+COCCINELLE              PUCE             
+PUCE                    COCCINELLE       
+MOUSTIQUE               MOUSTIQUE        
+FOURMI                  FOURMI           
+----        ----   ==>  ----        ---- 
+BLEU        ROUGE       BLEU        ROUGE
+
+DP KISOLO
+DP gagne un point
+
+PUCE                          COCCINELLE
+COCCINELLE                    PUCE      
+MOUSTIQUE                     FOURMI    
+FOURMI                        MOUSTIQUE 
+----        ----   ==>  ----  ----      
+BLEU        ROUGE       BLEU  ROUGE     
+
+DP KIKIKIKIMAMA
+DP gagne un point
+
+      COCCINELLE       MOUSTIQUE        
+      PUCE             PUCE             
+      FOURMI           COCCINELLE       
+      MOUSTIQUE        FOURMI           
+----  ----        ==>  ----        ---- 
+BLEU  ROUGE            BLEU        ROUGE
+
+DP LOLOLONINILO
+DP gagne un point
+
+MOUSTIQUE                     COCCINELLE
+PUCE                          MOUSTIQUE 
+COCCINELLE                    FOURMI    
+FOURMI                        PUCE      
+----        ----   ==>  ----  ----      
+BLEU        ROUGE       BLEU  ROUGE     
+
+DP KIKIKISOMAKI
+DP gagne un point
+
+      COCCINELLE                            
+      MOUSTIQUE        PUCE                 
+      FOURMI           MOUSTIQUE            
+      PUCE             FOURMI     COCCINELLE
+----  ----        ==>  ----       ----      
+BLEU  ROUGE            BLEU       ROUGE     
+
+DP LOLOSOLONISO
+DP gagne un point
+
+                            FOURMI           
+PUCE                        PUCE             
+MOUSTIQUE                   MOUSTIQUE        
+FOURMI     COCCINELLE       COCCINELLE       
+----       ----        ==>  ----        ---- 
+BLEU       ROUGE            BLEU        ROUGE
+
+DP NILONININI
+DP gagne un point
+
+FOURMI                                    
+PUCE                    COCCINELLE        
+MOUSTIQUE               MOUSTIQUE         
+COCCINELLE              PUCE        FOURMI
+----        ----   ==>  ----        ----  
+BLEU        ROUGE       BLEU        ROUGE 
+
+DP KIKISOLONI
+DP gagne un point
+
+COCCINELLE                       PUCE      
+MOUSTIQUE                        COCCINELLE
+PUCE        FOURMI       FOURMI  MOUSTIQUE 
+----        ----    ==>  ----    ----      
+BLEU        ROUGE        BLEU    ROUGE     
+
+DP KISOKIMASO
+DP gagne un point
+
+                         COCCINELLE       
+        PUCE             MOUSTIQUE        
+        COCCINELLE       FOURMI           
+FOURMI  MOUSTIQUE        PUCE             
+----    ----        ==>  ----        ---- 
+BLEU    ROUGE            BLEU        ROUGE
+
+DP LONILOSOLO
+DP gagne un point
+
+COCCINELLE                                
+MOUSTIQUE                                 
+FOURMI                  FOURMI  COCCINELLE
+PUCE                    PUCE    MOUSTIQUE 
+----        ----   ==>  ----    ----      
+BLEU        ROUGE       BLEU    ROUGE     
+
+DP KIKIMA
+DP gagne un point
+
+                               FOURMI    
+                               MOUSTIQUE 
+FOURMI  COCCINELLE             PUCE      
+PUCE    MOUSTIQUE              COCCINELLE
+----    ----        ==>  ----  ----      
+BLEU    ROUGE            BLEU  ROUGE     
+
+DP KISOMAKI
+DP gagne un point
+
+      FOURMI                 MOUSTIQUE 
+      MOUSTIQUE              PUCE      
+      PUCE                   COCCINELLE
+      COCCINELLE             FOURMI    
+----  ----        ==>  ----  ----      
+BLEU  ROUGE            BLEU  ROUGE     
+
+DP MAMAMA
+DP gagne un point
+
+      MOUSTIQUE                          
+      PUCE                               
+      COCCINELLE       MOUSTIQUE   PUCE  
+      FOURMI           COCCINELLE  FOURMI
+----  ----        ==>  ----        ----  
+BLEU  ROUGE            BLEU        ROUGE 
+
+DP LOLOSONI
+DP gagne un point
+
+MOUSTIQUE   PUCE         MOUSTIQUE  COCCINELLE
+COCCINELLE  FOURMI       FOURMI     PUCE      
+----        ----    ==>  ----       ----      
+BLEU        ROUGE        BLEU       ROUGE     
+
+DP NIMASONI
+DP gagne un point
+
+                            FOURMI               
+MOUSTIQUE  COCCINELLE       COCCINELLE           
+FOURMI     PUCE             PUCE        MOUSTIQUE
+----       ----        ==>  ----        ----     
+BLEU       ROUGE            BLEU        ROUGE    
+
+DP SOMASOLONI
+DP gagne un point
+
+                                  PUCE      
+FOURMI                            MOUSTIQUE 
+COCCINELLE                        FOURMI    
+PUCE        MOUSTIQUE             COCCINELLE
+----        ----       ==>  ----  ----      
+BLEU        ROUGE           BLEU  ROUGE     
+
+DP KISOKIMAKI
+DP gagne un point
+
+      PUCE                               
+      MOUSTIQUE                          
+      FOURMI           FOURMI  MOUSTIQUE 
+      COCCINELLE       PUCE    COCCINELLE
+----  ----        ==>  ----    ----      
+BLEU  ROUGE            BLEU    ROUGE     
+
+DP LOLOSO
+DP gagne un point
+
+FOURMI  MOUSTIQUE        FOURMI      MOUSTIQUE
+PUCE    COCCINELLE       COCCINELLE  PUCE     
+----    ----        ==>  ----        ----     
+BLEU    ROUGE            BLEU        ROUGE    
+
+DP NISOMASONI
+DP gagne un point
+
+                                  MOUSTIQUE 
+                                  FOURMI    
+FOURMI      MOUSTIQUE             PUCE      
+COCCINELLE  PUCE                  COCCINELLE
+----        ----       ==>  ----  ----      
+BLEU        ROUGE           BLEU  ROUGE     
+
+DP KISOMAKIMA
+DP gagne un point
+
+      MOUSTIQUE                             
+      FOURMI                                
+      PUCE             FOURMI     PUCE      
+      COCCINELLE       MOUSTIQUE  COCCINELLE
+----  ----        ==>  ----       ----      
+BLEU  ROUGE            BLEU       ROUGE     
+
+DP LOLO
+DP gagne un point
+
+                            FOURMI           
+                            COCCINELLE       
+FOURMI     PUCE             PUCE             
+MOUSTIQUE  COCCINELLE       MOUSTIQUE        
+----       ----        ==>  ----        ---- 
+BLEU       ROUGE            BLEU        ROUGE
+
+DP SOLOSOLO
+DP gagne un point
+
+FOURMI                                    
+COCCINELLE                                
+PUCE                    PUCE    COCCINELLE
+MOUSTIQUE               FOURMI  MOUSTIQUE 
+----        ----   ==>  ----    ----      
+BLEU        ROUGE       BLEU    ROUGE     
+
+DP NIKIKISONI
+DP gagne un point
+
+                                 COCCINELLE
+PUCE    COCCINELLE               PUCE      
+FOURMI  MOUSTIQUE        FOURMI  MOUSTIQUE 
+----    ----        ==>  ----    ----      
+BLEU    ROUGE            BLEU    ROUGE     
+
+DP SOKI
+DP gagne un point
+
+                               FOURMI    
+        COCCINELLE             COCCINELLE
+        PUCE                   MOUSTIQUE 
+FOURMI  MOUSTIQUE              PUCE      
+----    ----        ==>  ----  ----      
+BLEU    ROUGE            BLEU  ROUGE     
+
+DP LOMAKIKI
+DP gagne un point
+
+      FOURMI                                
+      COCCINELLE                   MOUSTIQUE
+      MOUSTIQUE                    PUCE     
+      PUCE             COCCINELLE  FOURMI   
+----  ----        ==>  ----        ----     
+BLEU  ROUGE            BLEU        ROUGE    
+
+DP LOSOMAMA
+DP gagne un point
+
+                            MOUSTIQUE        
+            MOUSTIQUE       PUCE             
+            PUCE            FOURMI           
+COCCINELLE  FOURMI          COCCINELLE       
+----        ----       ==>  ----        ---- 
+BLEU        ROUGE           BLEU        ROUGE
+
+DP MALOLOSOLO
+DP gagne un point
+
+MOUSTIQUE                                    
+PUCE                    COCCINELLE           
+FOURMI                  FOURMI               
+COCCINELLE              PUCE        MOUSTIQUE
+----        ----   ==>  ----        ----     
+BLEU        ROUGE       BLEU        ROUGE    
+
+DP KIKISOLONI
+DP gagne un point
+
+                                  PUCE      
+COCCINELLE                        MOUSTIQUE 
+FOURMI                            COCCINELLE
+PUCE        MOUSTIQUE             FOURMI    
+----        ----       ==>  ----  ----      
+BLEU        ROUGE           BLEU  ROUGE     
+
+DP KISOKIMAKI
+DP gagne un point
+
+      PUCE                             
+      MOUSTIQUE              FOURMI    
+      COCCINELLE             COCCINELLE
+      FOURMI           PUCE  MOUSTIQUE 
+----  ----        ==>  ----  ----      
+BLEU  ROUGE            BLEU  ROUGE     
+
+DP LOLOSOKIMA
+DP gagne un point
+
+      FOURMI                   COCCINELLE
+      COCCINELLE               MOUSTIQUE 
+PUCE  MOUSTIQUE        FOURMI  PUCE      
+----  ----        ==>  ----    ----      
+BLEU  ROUGE            BLEU    ROUGE     
+
+DP SOMAMA
+DP gagne un point
+
+        COCCINELLE       MOUSTIQUE         
+        MOUSTIQUE        PUCE              
+FOURMI  PUCE             COCCINELLE  FOURMI
+----    ----        ==>  ----        ----  
+BLEU    ROUGE            BLEU        ROUGE 
+
+DP LOLOSONISO
+DP gagne un point
+
+                         MOUSTIQUE        
+MOUSTIQUE                FOURMI           
+PUCE                     COCCINELLE       
+COCCINELLE  FOURMI       PUCE             
+----        ----    ==>  ----        ---- 
+BLEU        ROUGE        BLEU        ROUGE
+
+DP KINILOSOLO
+DP gagne un point
+
+MOUSTIQUE               MOUSTIQUE        
+FOURMI                  COCCINELLE       
+COCCINELLE              PUCE             
+PUCE                    FOURMI           
+----        ----   ==>  ----        ---- 
+BLEU        ROUGE       BLEU        ROUGE
+
+DP KININILO
+DP gagne un point
+
+MOUSTIQUE               PUCE             
+COCCINELLE              FOURMI           
+PUCE                    MOUSTIQUE        
+FOURMI                  COCCINELLE       
+----        ----   ==>  ----        ---- 
+BLEU        ROUGE       BLEU        ROUGE
+
+DP NINI
+DP gagne un point
+
+PUCE                          FOURMI    
+FOURMI                        PUCE      
+MOUSTIQUE                     MOUSTIQUE 
+COCCINELLE                    COCCINELLE
+----        ----   ==>  ----  ----      
+BLEU        ROUGE       BLEU  ROUGE     
+
+DP NIKINIKIKIKI
+DP gagne un point
+
+      FOURMI                                
+      PUCE             FOURMI               
+      MOUSTIQUE        PUCE                 
+      COCCINELLE       MOUSTIQUE  COCCINELLE
+----  ----        ==>  ----       ----      
+BLEU  ROUGE            BLEU       ROUGE     
+
+DP LOLOSOLONI
+DP gagne un point
+
+FOURMI                      MOUSTIQUE            
+PUCE                        FOURMI               
+MOUSTIQUE  COCCINELLE       PUCE       COCCINELLE
+----       ----        ==>  ----       ----      
+BLEU       ROUGE            BLEU       ROUGE     
+
+DP NI
+DP gagne un point
+
+MOUSTIQUE                   FOURMI           
+FOURMI                      COCCINELLE       
+PUCE       COCCINELLE       MOUSTIQUE   PUCE 
+----       ----        ==>  ----        ---- 
+BLEU       ROUGE            BLEU        ROUGE
+
+DP NISONI
+DP gagne un point
+
+                        MOUSTIQUE        
+FOURMI                  COCCINELLE       
+COCCINELLE              FOURMI           
+MOUSTIQUE   PUCE        PUCE             
+----        ----   ==>  ----        ---- 
+BLEU        ROUGE       BLEU        ROUGE
+
+DP SONISONILO
+DP gagne un point
+
+MOUSTIQUE                                
+COCCINELLE              FOURMI           
+FOURMI                  MOUSTIQUE        
+PUCE                    COCCINELLE  PUCE 
+----        ----   ==>  ----        ---- 
+BLEU        ROUGE       BLEU        ROUGE
+
+DP NIKINI
+DP gagne un point
+
+FOURMI                                       
+MOUSTIQUE               COCCINELLE  PUCE     
+COCCINELLE  PUCE        FOURMI      MOUSTIQUE
+----        ----   ==>  ----        ----     
+BLEU        ROUGE       BLEU        ROUGE    
+
+DP KISONIMA
+DP gagne un point
+
+                            COCCINELLE       
+COCCINELLE  PUCE            FOURMI           
+FOURMI      MOUSTIQUE       MOUSTIQUE   PUCE 
+----        ----       ==>  ----        ---- 
+BLEU        ROUGE           BLEU        ROUGE
+
+DP LOSONINI
+DP gagne un point
+
+                              MOUSTIQUE 
+COCCINELLE                    COCCINELLE
+FOURMI                        FOURMI    
+MOUSTIQUE   PUCE              PUCE      
+----        ----   ==>  ----  ----      
+BLEU        ROUGE       BLEU  ROUGE     
+
+DP KISOKIKI
+DP gagne un point
+
+      MOUSTIQUE                             
+      COCCINELLE       PUCE                 
+      FOURMI           COCCINELLE           
+      PUCE             FOURMI      MOUSTIQUE
+----  ----        ==>  ----        ----     
+BLEU  ROUGE            BLEU        ROUGE    
+
+DP LOLOSOLONISO
+DP gagne un point
+
+                            FOURMI           
+PUCE                        MOUSTIQUE        
+COCCINELLE                  COCCINELLE       
+FOURMI      MOUSTIQUE       PUCE             
+----        ----       ==>  ----        ---- 
+BLEU        ROUGE           BLEU        ROUGE
+
+DP KISOLOLONI
+DP gagne un point
+
+FOURMI                  FOURMI           
+MOUSTIQUE               PUCE             
+COCCINELLE              COCCINELLE       
+PUCE                    MOUSTIQUE        
+----        ----   ==>  ----        ---- 
+BLEU        ROUGE       BLEU        ROUGE
+
+DP KIKISOLONILO
+DP gagne un point
+
+FOURMI                                    
+PUCE                            MOUSTIQUE 
+COCCINELLE                      PUCE      
+MOUSTIQUE               FOURMI  COCCINELLE
+----        ----   ==>  ----    ----      
+BLEU        ROUGE       BLEU    ROUGE     
+
+DP KIKISOKIMASO
+DP gagne un point
+
+        MOUSTIQUE                    FOURMI   
+        PUCE                         PUCE     
+FOURMI  COCCINELLE       COCCINELLE  MOUSTIQUE
+----    ----        ==>  ----        ----     
+BLEU    ROUGE            BLEU        ROUGE    
+
+DP LOSOKIMASO
+DP gagne un point
+
+            FOURMI          PUCE                 
+            PUCE            FOURMI               
+COCCINELLE  MOUSTIQUE       MOUSTIQUE  COCCINELLE
+----        ----       ==>  ----       ----      
+BLEU        ROUGE           BLEU       ROUGE     
+
+DP MALOLONISO
+DP gagne un point
+
+                            COCCINELLE       
+PUCE                        PUCE             
+FOURMI                      FOURMI           
+MOUSTIQUE  COCCINELLE       MOUSTIQUE        
+----       ----        ==>  ----        ---- 
+BLEU       ROUGE            BLEU        ROUGE
+
+DP LO
+DP gagne un point
+
+COCCINELLE                                   
+PUCE                               COCCINELLE
+FOURMI                             FOURMI    
+MOUSTIQUE               MOUSTIQUE  PUCE      
+----        ----   ==>  ----       ----      
+BLEU        ROUGE       BLEU       ROUGE     
+
+DP KIKIKIMA
+DP gagne un point
+
+           COCCINELLE                  COCCINELLE
+           FOURMI                      PUCE      
+MOUSTIQUE  PUCE             MOUSTIQUE  FOURMI    
+----       ----        ==>  ----       ----      
+BLEU       ROUGE            BLEU       ROUGE     
+
+DP LOMAKI
+DP gagne un point
+
+           COCCINELLE                  PUCE      
+           PUCE                        FOURMI    
+MOUSTIQUE  FOURMI           MOUSTIQUE  COCCINELLE
+----       ----        ==>  ----       ----      
+BLEU       ROUGE            BLEU       ROUGE     
+
+DP MAMA
+DP gagne un point
+
+           PUCE                               
+           FOURMI           COCCINELLE  FOURMI
+MOUSTIQUE  COCCINELLE       MOUSTIQUE   PUCE  
+----       ----        ==>  ----        ----  
+BLEU       ROUGE            BLEU        ROUGE 
+
+DP MALOMA
+DP gagne un point
+
+                                     PUCE     
+COCCINELLE  FOURMI                   FOURMI   
+MOUSTIQUE   PUCE         COCCINELLE  MOUSTIQUE
+----        ----    ==>  ----        ----     
+BLEU        ROUGE        BLEU        ROUGE    
+
+DP NISOKIMA
+DP gagne un point
+
+            PUCE                                 
+            FOURMI          COCCINELLE  MOUSTIQUE
+COCCINELLE  MOUSTIQUE       FOURMI      PUCE     
+----        ----       ==>  ----        ----     
+BLEU        ROUGE           BLEU        ROUGE    
+
+DP LOSONIMA
+DP gagne un point
+
+                                        FOURMI   
+COCCINELLE  MOUSTIQUE                   MOUSTIQUE
+FOURMI      PUCE            COCCINELLE  PUCE     
+----        ----       ==>  ----        ----     
+BLEU        ROUGE           BLEU        ROUGE    
+
+DP KISO
+DP gagne un point
+
+            FOURMI          COCCINELLE           
+            MOUSTIQUE       PUCE                 
+COCCINELLE  PUCE            FOURMI      MOUSTIQUE
+----        ----       ==>  ----        ----     
+BLEU        ROUGE           BLEU        ROUGE    
+
+DP LOLOSONI
+DP gagne un point
+
+COCCINELLE                                       
+PUCE                        PUCE        FOURMI   
+FOURMI      MOUSTIQUE       COCCINELLE  MOUSTIQUE
+----        ----       ==>  ----        ----     
+BLEU        ROUGE           BLEU        ROUGE    
+
+DP NIKINI
+DP gagne un point
+
+                            MOUSTIQUE        
+PUCE        FOURMI          FOURMI           
+COCCINELLE  MOUSTIQUE       COCCINELLE  PUCE 
+----        ----       ==>  ----        ---- 
+BLEU        ROUGE           BLEU        ROUGE
+
+DP SOLOSO
+DP gagne un point
+
+MOUSTIQUE                                 
+FOURMI                  COCCINELLE  PUCE  
+COCCINELLE  PUCE        MOUSTIQUE   FOURMI
+----        ----   ==>  ----        ----  
+BLEU        ROUGE       BLEU        ROUGE 
+
+DP KISONIMA
+DP gagne un point
+
+                         COCCINELLE       
+                         FOURMI           
+COCCINELLE  PUCE         PUCE             
+MOUSTIQUE   FOURMI       MOUSTIQUE        
+----        ----    ==>  ----        ---- 
+BLEU        ROUGE        BLEU        ROUGE
+
+DP SOLOSOLO
+DP gagne un point
+
+COCCINELLE                                   
+FOURMI                             FOURMI    
+PUCE                               COCCINELLE
+MOUSTIQUE               MOUSTIQUE  PUCE      
+----        ----   ==>  ----       ----      
+BLEU        ROUGE       BLEU       ROUGE     
+
+DP KIKIKIMAMA
+DP gagne un point
+
+           FOURMI                                
+           COCCINELLE       PUCE        MOUSTIQUE
+MOUSTIQUE  PUCE             COCCINELLE  FOURMI   
+----       ----        ==>  ----        ----     
+BLEU       ROUGE            BLEU        ROUGE    
+
+DP KIMAMALOLO
+DP gagne un point
+
+                                  COCCINELLE
+                                  FOURMI    
+PUCE        MOUSTIQUE             MOUSTIQUE 
+COCCINELLE  FOURMI                PUCE      
+----        ----       ==>  ----  ----      
+BLEU        ROUGE           BLEU  ROUGE     
+
+DP SOKIMAKI
+DP gagne un point
+
+      COCCINELLE             PUCE      
+      FOURMI                 FOURMI    
+      MOUSTIQUE              MOUSTIQUE 
+      PUCE                   COCCINELLE
+----  ----        ==>  ----  ----      
+BLEU  ROUGE            BLEU  ROUGE     
+
+DP MALOMAMAKI
+DP gagne un point
+
+      PUCE                   PUCE      
+      FOURMI                 COCCINELLE
+      MOUSTIQUE              MOUSTIQUE 
+      COCCINELLE             FOURMI    
+----  ----        ==>  ----  ----      
+BLEU  ROUGE            BLEU  ROUGE     
+
+DP LOLOSOKIMAKI
+DP gagne un point
+
+      PUCE                               
+      COCCINELLE               PUCE      
+      MOUSTIQUE                MOUSTIQUE 
+      FOURMI           FOURMI  COCCINELLE
+----  ----        ==>  ----    ----      
+BLEU  ROUGE            BLEU    ROUGE     
+
+DP MALOLOMAKI
+DP gagne un point
+
+        PUCE             MOUSTIQUE        
+        MOUSTIQUE        COCCINELLE       
+FOURMI  COCCINELLE       FOURMI      PUCE 
+----    ----        ==>  ----        ---- 
+BLEU    ROUGE            BLEU        ROUGE
+
+DP MALOLOSO
+DP gagne un point
+
+MOUSTIQUE                          PUCE      
+COCCINELLE                         COCCINELLE
+FOURMI      PUCE        MOUSTIQUE  FOURMI    
+----        ----   ==>  ----       ----      
+BLEU        ROUGE       BLEU       ROUGE     
+
+DP NIKIKISOMA
+DP gagne un point
+
+                                  MOUSTIQUE 
+           PUCE                   COCCINELLE
+           COCCINELLE             PUCE      
+MOUSTIQUE  FOURMI                 FOURMI    
+----       ----        ==>  ----  ----      
+BLEU       ROUGE            BLEU  ROUGE     
+
+DP LOSOKIKI
+DP gagne un point
+
+      MOUSTIQUE                        
+      COCCINELLE             COCCINELLE
+      PUCE                   FOURMI    
+      FOURMI           PUCE  MOUSTIQUE 
+----  ----        ==>  ----  ----      
+BLEU  ROUGE            BLEU  ROUGE     
+
+DP MAMALOMA
+DP gagne un point
+
+      COCCINELLE                            
+      FOURMI           MOUSTIQUE  FOURMI    
+PUCE  MOUSTIQUE        PUCE       COCCINELLE
+----  ----        ==>  ----       ----      
+BLEU  ROUGE            BLEU       ROUGE     
+
+DP MALOMA
+DP gagne un point
+
+                                  FOURMI    
+                                  MOUSTIQUE 
+MOUSTIQUE  FOURMI                 COCCINELLE
+PUCE       COCCINELLE             PUCE      
+----       ----        ==>  ----  ----      
+BLEU       ROUGE            BLEU  ROUGE     
+
+DP KISOMAKIMA
+DP gagne un point
+
+      FOURMI                                
+      MOUSTIQUE                             
+      COCCINELLE       MOUSTIQUE  PUCE      
+      PUCE             FOURMI     COCCINELLE
+----  ----        ==>  ----       ----      
+BLEU  ROUGE            BLEU       ROUGE     
+
+DP LOLOMA
+DP gagne un point
+
+                                  FOURMI    
+MOUSTIQUE  PUCE                   MOUSTIQUE 
+FOURMI     COCCINELLE       PUCE  COCCINELLE
+----       ----        ==>  ----  ----      
+BLEU       ROUGE            BLEU  ROUGE     
+
+DP SOKISO
+DP gagne un point
+
+      FOURMI                                
+      MOUSTIQUE        PUCE       COCCINELLE
+PUCE  COCCINELLE       MOUSTIQUE  FOURMI    
+----  ----        ==>  ----       ----      
+BLEU  ROUGE            BLEU       ROUGE     
+
+DP LOSONIMA
+DP gagne un point
+
+PUCE       COCCINELLE       PUCE    MOUSTIQUE 
+MOUSTIQUE  FOURMI           FOURMI  COCCINELLE
+----       ----        ==>  ----    ----      
+BLEU       ROUGE            BLEU    ROUGE     
+
+DP NIMASONI
+DP gagne un point
+
+DP 119
+JR 0
+MZ 0
