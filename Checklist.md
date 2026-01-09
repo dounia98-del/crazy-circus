@@ -35,3 +35,5 @@ Ce document confirme la vérification de chaque règle spécifique du sujet.
 
 ## 5. Tests Unitaires
 - [x] **Tests Unitaires** : Isolés dans un dossier `tests/` avec un exécutable autonome (	ests/tests.c). Couverture complète de la logique (Config, Joueurs, Moteur de jeu, Permutations).
+
+- [x] **Cartes Triviales** : Le programme saute automatiquement les cartes dont la position cible est identique à la position actuelle du jeu.

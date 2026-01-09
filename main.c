@@ -84,11 +84,17 @@ int main(int argc, const char *argv[]) {
 
   while (!jeuTermine) {
     if (carteEnJeu == NULL) {
-      if (partie.nbCartes == 0) {
+      do {
+        carteEnJeu = tirerCarteAleatoire(&partie);
+        if (carteEnJeu == NULL)
+          break;
+      } while (positionsEgales(carteEnJeu->cible, posCourante));
+
+      if (carteEnJeu == NULL) {
         jeuTermine = 1;
         continue;
       }
-      carteEnJeu = tirerCarteAleatoire(&partie);
+
       for (int i = 0; i < nbJoueurs; i++)
         partie.joueurs[i].peutjouer = 1;
       copierPosition(&carteEnJeu->depart, &posCourante);
