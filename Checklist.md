@@ -32,3 +32,6 @@ Ce document confirme la vérification de chaque règle spécifique du sujet.
 ## 4. Nettoyage de la Mémoire
 - [x] **Libération complète** : Toutes les allocations (joueurs, config, cartes, podiums) sont libérées via `libererConfig`, `libererPartie` et `free` en fin de `main`.
 - [x] **Robustesse** : Utilisation de `nbCartesTotal` pour garantir que même les cartes déjà piochées sont libérées de la mémoire.
+
+## 5. Tests Unitaires
+- [x] **Tests Unitaires** : Isolés dans un dossier `tests/` avec un exécutable autonome (	ests/tests.c). Couverture complète de la logique (Config, Joueurs, Moteur de jeu, Permutations).

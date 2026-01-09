@@ -4,6 +4,10 @@
 #include <string.h>
 #include <time.h>
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 #include "config.h"
 #include "jeu.h"
 #include "joueur.h"
@@ -18,6 +22,9 @@ int comparerJoueurs(const void *a, const void *b) {
 }
 
 int main(int argc, const char *argv[]) {
+#ifdef _WIN32
+  SetConsoleOutputCP(65001);
+#endif
   srand((unsigned int)time(NULL));
 
   if (argc < 3) {
