@@ -4,46 +4,48 @@
 #include <stdlib.h>
 #include <string.h>
 
-Joueur* initialiserJoueurs(int argc, const char* argv[], int* nbJoueurs) {
-    // Le nombre de joueurs est le nombre d'arguments moins 1 (le nom du programme)
-    *nbJoueurs = argc - 1;
+Joueur *initialiserJoueurs(int argc, const char *argv[], int *nbJoueurs) {
+  // Le nombre de joueurs est le nombre d'arguments moins 1 (le nom du
+  // programme)
+  *nbJoueurs = argc - 1;
 
-    // Allocation dynamique du tableau de joueurs
-    Joueur* joueurs = malloc(*nbJoueurs * sizeof(Joueur));
-    if (joueurs == NULL) {
-        printf("Erreur d'allocation memoire.\n");
+  // Allocation dynamique du tableau de joueurs
+  Joueur *joueurs = malloc(*nbJoueurs * sizeof(Joueur));
+  if (joueurs == NULL) {
+    printf("Erreur d'allocation memoire.\n");
+    exit(1);
+  }
+
+  // Boucle pour cr√©er chaque joueur
+  for (int i = 0; i < *nbJoueurs; i++) {
+    // argv[0] est le nom du programme, donc le joueur i est dans argv[i+1]
+    const char *nomSaisi = argv[i + 1];
+
+    // noms distincts
+    for (int j = 0; j < i; j++) {
+      if (strcmp(joueurs[j].nom, nomSaisi) == 0) {
+        printf("Erreur : Les noms des joueurs doivent etre distincts (%s est "
+               "en double).\n",
+               nomSaisi);
+        // on termine imm√©diatement
+        free(joueurs);
         exit(1);
+      }
     }
 
-    // Boucle pour crÈer chaque joueur
-    for (int i = 0; i < *nbJoueurs; i++) {
-        // argv[0] est le nom du programme, donc le joueur i est dans argv[i+1]
-        const char* nomSaisi = argv[i + 1];
+    // Copie du nom (avec s√©curit√© pour ne pas d√©passer 29 caract√®res + \0)
+    strncpy(joueurs[i].nom, nomSaisi, 29);
+    joueurs[i].nom[29] = '\0'; // Assure la fin de cha√Æne
 
-        //noms distincts
-        for (int j = 0; j < i; j++) {
-            if (strcmp(joueurs[j].nom, nomSaisi) == 0) {
-                printf("Erreur : Les noms des joueurs doivent etre distincts (%s est en double).\n", nomSaisi);
-                // on termine immÈdiatement
-                free(joueurs);
-                exit(1);
-            }
-        }
+    joueurs[i].score = 0;
+    joueurs[i].peutjouer = 1; // 1 = Vrai (peut jouer)
+  }
 
-
-        // Copie du nom (avec sÈcuritÈ pour ne pas dÈpasser 49 caractËres)
-        strncpy(joueurs[i].nom, nomSaisi, 49);
-        joueurs[i].nom[49] = '\0'; // Assure la fin de chaÓne
-
-        joueurs[i].score = 0;
-        joueurs[i].peutjouer = 1; // 1 = Vrai (peut jouer)
-    }
-
-    return joueurs;
+  return joueurs;
 }
 
-void ajouterPoint(Joueur* joueur) {
-    if (joueur != NULL) {
-        joueur->score++;
-    }
+void ajouterPoint(Joueur *joueur) {
+  if (joueur != NULL) {
+    joueur->score++;
+  }
 }
