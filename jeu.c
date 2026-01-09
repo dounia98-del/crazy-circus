@@ -87,7 +87,7 @@ void appliquerSequence(Position* pos, const char* sequence) {
             printf("Ordre inconnu ignore : %c%c\n", c1, c2);
         }
 
-        // On avance de 2 caractères
+        // On avance de 2 caractères  
         i += 2;
     }
 }

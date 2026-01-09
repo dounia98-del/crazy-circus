@@ -74,32 +74,44 @@ void initPartie(Partie* partie, Joueur* joueurs, int nbJoueurs) {
 }
 
 // On utilise une largeur fixe de 12 caractères pour que tout soit droit.
+// Fonction d'affichage corrigée pour alignement strict
 void getCarte(const Carte* carte) {
     int hauteur = 3;
 
     for (int y = hauteur - 1; y >= 0; y--) {
-        // --- DEPART ---
+        // --- COLONNE 1 : DEPART BLEU (12 char) ---
         if (y < carte->depart.bleu.nbAnimaux) printf("%-12s", carte->depart.bleu.animaux[y]);
         else printf("%-12s", "");
 
+        // --- COLONNE 2 : DEPART ROUGE (12 char) ---
         if (y < carte->depart.rouge.nbAnimaux) printf("%-12s", carte->depart.rouge.animaux[y]);
         else printf("%-12s", "");
 
-        printf("   "); // Espace central
+        // --- ESPACE CENTRAL (7 char) ---
+        // Doit faire EXACTEMENT la même taille que "  ==>  " du bas
+        printf("       ");
 
-        // --- CIBLE ---
+        // --- COLONNE 3 : CIBLE BLEU (12 char) ---
         if (y < carte->cible.bleu.nbAnimaux) printf("%-12s", carte->cible.bleu.animaux[y]);
         else printf("%-12s", "");
 
+        // --- COLONNE 4 : CIBLE ROUGE (12 char) ---
         if (y < carte->cible.rouge.nbAnimaux) printf("%-12s", carte->cible.rouge.animaux[y]);
         else printf("%-12s", "");
 
         printf("\n");
     }
 
-    
-    printf("----        ----           ==>  ----        ----\n");
-    printf("BLEU        ROUGE               BLEU        ROUGE\n");
+    // --- PIED DE PAGE (Alignement strict) ---
+    // On utilise %-12s pour les colonnes et on écrit la flèche "  ==>  " (2 espaces, flèche, 2 espaces)
+
+    // Ligne des tirets
+    printf("%-12s%-12s  ==>  %-12s%-12s\n", "----", "----", "----", "----");
+
+    // Ligne des noms (on met 7 espaces au milieu pour remplacer la flèche)
+    printf("%-12s%-12s       %-12s%-12s\n", "BLEU", "ROUGE", "BLEU", "ROUGE");
+
+    printf("\n");
 }
 
 
@@ -135,7 +147,7 @@ void joueurSuivant(Partie* partie) {
 
 // Fonction pour nettoyer toute la mémoire allouée dans initPartie
 void libererPartie(Partie* partie) {
-    // 1. On libère le contenu de chaque carte
+    // On libère le contenu de chaque carte
     for (int i = 0; i < partie->nbCartes; i++) {
         Carte* c = &partie->cartes[i];
 
@@ -148,9 +160,7 @@ void libererPartie(Partie* partie) {
         free(c->cible.rouge.animaux);
     }
 
-    // 2. On libère le tableau de cartes lui-même
+    // On libère le tableau de cartes lui-même
     free(partie->cartes);
 
-    // 3. (Optionnel) Si 'joueurs' a été alloué dynamiquement dans le main, 
-    // on le libère souvent dans le main, mais on peut mettre partie->joueurs = NULL ici par sécurité.
 }
